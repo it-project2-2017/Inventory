@@ -2182,8 +2182,8 @@
                                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                                   <Component id="jTextField5" max="32767" attributes="0"/>
                                                   <Component id="jTextField6" max="32767" attributes="0"/>
-                                                  <Component id="jComboBox1" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="jXDatePicker2" pref="156" max="32767" attributes="0"/>
+                                                  <Component id="jXDatePicker2" max="32767" attributes="0"/>
+                                                  <Component id="jComboBox1" min="-2" pref="156" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>

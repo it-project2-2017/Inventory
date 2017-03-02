@@ -5,6 +5,7 @@
  */
 import java.awt.CardLayout;
 import javax.swing.ImageIcon;
+import javax.swing.UIManager;
 
 /**
  *
@@ -49,11 +50,77 @@ public class main extends javax.swing.JFrame {
         returnsStock = new javax.swing.JButton();
         supplierPanel = new javax.swing.JPanel();
         supplierPanelOne = new javax.swing.JPanel();
+        jScrollPane13 = new javax.swing.JScrollPane();
+        jTable10 = new javax.swing.JTable();
+        jLabel58 = new javax.swing.JLabel();
+        jTextField17 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel59 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jLabel60 = new javax.swing.JLabel();
+        jTextField18 = new javax.swing.JTextField();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jComboBox3 = new javax.swing.JComboBox<>();
+        jSeparator8 = new javax.swing.JSeparator();
+        jScrollPane14 = new javax.swing.JScrollPane();
+        jTable11 = new javax.swing.JTable();
+        jLabel63 = new javax.swing.JLabel();
+        jTextField19 = new javax.swing.JTextField();
+        jLabel64 = new javax.swing.JLabel();
+        jTextField20 = new javax.swing.JTextField();
+        jLabel65 = new javax.swing.JLabel();
+        jTextField21 = new javax.swing.JTextField();
+        jButton6 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jXDatePicker1 = new org.jdesktop.swingx.JXDatePicker();
         supplierPanelTwo = new javax.swing.JPanel();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jScrollPane15 = new javax.swing.JScrollPane();
+        jTable12 = new javax.swing.JTable();
         jLabel6 = new javax.swing.JLabel();
+        jTextField22 = new javax.swing.JTextField();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jComboBox4 = new javax.swing.JComboBox<>();
+        jComboBox5 = new javax.swing.JComboBox<>();
+        jLabel68 = new javax.swing.JLabel();
+        jTextField23 = new javax.swing.JTextField();
+        jLabel69 = new javax.swing.JLabel();
+        jXDatePicker2 = new org.jdesktop.swingx.JXDatePicker();
+        jLabel70 = new javax.swing.JLabel();
+        jComboBox6 = new javax.swing.JComboBox<>();
+        jSeparator9 = new javax.swing.JSeparator();
+        jScrollPane16 = new javax.swing.JScrollPane();
+        jTable13 = new javax.swing.JTable();
+        jLabel71 = new javax.swing.JLabel();
+        jTextField24 = new javax.swing.JTextField();
+        jLabel72 = new javax.swing.JLabel();
+        jTextField25 = new javax.swing.JTextField();
         supplierPanelThree = new javax.swing.JPanel();
+        jButton12 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jScrollPane17 = new javax.swing.JScrollPane();
+        jTable14 = new javax.swing.JTable();
+        jLabel73 = new javax.swing.JLabel();
+        jTextField26 = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jComboBox7 = new javax.swing.JComboBox<>();
+        jComboBox8 = new javax.swing.JComboBox<>();
+        jLabel75 = new javax.swing.JLabel();
+        jTextField27 = new javax.swing.JTextField();
+        jLabel76 = new javax.swing.JLabel();
+        jXDatePicker3 = new org.jdesktop.swingx.JXDatePicker();
+        jLabel77 = new javax.swing.JLabel();
+        jComboBox9 = new javax.swing.JComboBox<>();
+        jScrollPane18 = new javax.swing.JScrollPane();
+        jTable15 = new javax.swing.JTable();
+        jSeparator10 = new javax.swing.JSeparator();
+        jLabel78 = new javax.swing.JLabel();
+        jTextField28 = new javax.swing.JTextField();
         purchasePanelTwo = new javax.swing.JPanel();
         purchasedOrder = new javax.swing.JButton();
         unreceivedOrder = new javax.swing.JButton();
@@ -108,6 +175,7 @@ public class main extends javax.swing.JFrame {
         logOut3 = new javax.swing.JButton();
         suppliers = new javax.swing.JButton();
         employees = new javax.swing.JButton();
+        accounts = new javax.swing.JButton();
         orders = new javax.swing.JButton();
         reports = new javax.swing.JButton();
         mainMiscellanyPanel = new javax.swing.JPanel();
@@ -116,34 +184,161 @@ public class main extends javax.swing.JFrame {
         suppierList = new javax.swing.JButton();
         suppliersPanel = new javax.swing.JPanel();
         suppliersPanelOne = new javax.swing.JPanel();
+        suppliersPanelOneMain = new javax.swing.JPanel();
+        supplierProd = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        supplerOrd = new javax.swing.JPanel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTable3 = new javax.swing.JTable();
+        supplierInfo = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        add = new javax.swing.JButton();
-        save = new javax.swing.JButton();
+        Add = new javax.swing.JButton();
+        Save = new javax.swing.JButton();
+        Deactivate = new javax.swing.JButton();
+        Reactivate = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
-        suppliersPanelTwo = new javax.swing.JPanel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel29 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel30 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel31 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        jLabel32 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel33 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        jLabel34 = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        supInfo = new javax.swing.JButton();
+        supProd = new javax.swing.JButton();
+        supOrd = new javax.swing.JButton();
+        suppliersPanelTwo = new javax.swing.JPanel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTable4 = new javax.swing.JTable();
         miscellanyPanelTwo = new javax.swing.JPanel();
         newEmployee = new javax.swing.JButton();
         employeeList = new javax.swing.JButton();
         employeesPanel = new javax.swing.JPanel();
         employeesPanelOne = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jLabel21 = new javax.swing.JLabel();
+        jSeparator3 = new javax.swing.JSeparator();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTable5 = new javax.swing.JTable();
+        jLabel27 = new javax.swing.JLabel();
+        jTextField6 = new javax.swing.JTextField();
+        jLabel28 = new javax.swing.JLabel();
+        jTextField7 = new javax.swing.JTextField();
+        jLabel35 = new javax.swing.JLabel();
+        jTextField8 = new javax.swing.JTextField();
+        jLabel36 = new javax.swing.JLabel();
+        jTextField9 = new javax.swing.JTextField();
+        jLabel37 = new javax.swing.JLabel();
+        jSeparator4 = new javax.swing.JSeparator();
+        jLabel38 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+        jLabel39 = new javax.swing.JLabel();
+        jTextField10 = new javax.swing.JTextField();
+        jLabel40 = new javax.swing.JLabel();
+        jTextField11 = new javax.swing.JTextField();
+        jLabel41 = new javax.swing.JLabel();
+        jSeparator5 = new javax.swing.JSeparator();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
         employeesPanelTwo = new javax.swing.JPanel();
-        jLabel22 = new javax.swing.JLabel();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        jTable6 = new javax.swing.JTable();
         miscellanyPanelThree = new javax.swing.JPanel();
-        jLabel23 = new javax.swing.JLabel();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        jTable7 = new javax.swing.JTable();
         miscellanyPanelFour = new javax.swing.JPanel();
         sales = new javax.swing.JButton();
         prchs = new javax.swing.JButton();
         invtry = new javax.swing.JButton();
         reportsPanel = new javax.swing.JPanel();
         reportsPanelOne = new javax.swing.JPanel();
+        salesReport = new javax.swing.JPanel();
+        dailySalesReport = new javax.swing.JPanel();
+        jLabel22 = new javax.swing.JLabel();
+        weeklySalesReport = new javax.swing.JPanel();
+        jLabel23 = new javax.swing.JLabel();
+        monthlySalesReport = new javax.swing.JPanel();
         jLabel24 = new javax.swing.JLabel();
-        reportsPanelTwo = new javax.swing.JPanel();
+        yearlySalesReport = new javax.swing.JPanel();
         jLabel25 = new javax.swing.JLabel();
-        reportsPanelThree = new javax.swing.JPanel();
+        dailySales = new javax.swing.JButton();
+        weeklySales = new javax.swing.JButton();
+        monthlySales = new javax.swing.JButton();
+        yearlySales = new javax.swing.JButton();
+        reportsPanelTwo = new javax.swing.JPanel();
+        purchasingReport = new javax.swing.JPanel();
+        dailyPurchasingReport = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
+        weeklyPurchasingReport = new javax.swing.JPanel();
+        jLabel42 = new javax.swing.JLabel();
+        monthlyPurchasingReport = new javax.swing.JPanel();
+        jLabel43 = new javax.swing.JLabel();
+        yearlyPurchasingReport = new javax.swing.JPanel();
+        jLabel44 = new javax.swing.JLabel();
+        dailyPurchasing = new javax.swing.JButton();
+        weeklyPurchasing = new javax.swing.JButton();
+        monthlyPurchasing = new javax.swing.JButton();
+        yearlyPurchasing = new javax.swing.JButton();
+        reportsPanelThree = new javax.swing.JPanel();
+        inventoryReport = new javax.swing.JPanel();
+        dailyInventoryReport = new javax.swing.JPanel();
+        jLabel45 = new javax.swing.JLabel();
+        weeklyInventoryReport = new javax.swing.JPanel();
+        jLabel46 = new javax.swing.JLabel();
+        monthlyInventoryReport = new javax.swing.JPanel();
+        jLabel47 = new javax.swing.JLabel();
+        yearlyInventoryReport = new javax.swing.JPanel();
+        jLabel48 = new javax.swing.JLabel();
+        dailyInventory = new javax.swing.JButton();
+        weeklyInventory = new javax.swing.JButton();
+        monthlyInventory = new javax.swing.JButton();
+        yearlyInventory = new javax.swing.JButton();
+        miscellanyPanelFive = new javax.swing.JPanel();
+        accountPanel = new javax.swing.JPanel();
+        newAccountPanel = new javax.swing.JPanel();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        jTable8 = new javax.swing.JTable();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jLabel49 = new javax.swing.JLabel();
+        jSeparator6 = new javax.swing.JSeparator();
+        jLabel50 = new javax.swing.JLabel();
+        jTextField12 = new javax.swing.JTextField();
+        jLabel51 = new javax.swing.JLabel();
+        jTextField13 = new javax.swing.JTextField();
+        jLabel52 = new javax.swing.JLabel();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        jLabel53 = new javax.swing.JLabel();
+        jPasswordField2 = new javax.swing.JPasswordField();
+        jLabel54 = new javax.swing.JLabel();
+        jSeparator7 = new javax.swing.JSeparator();
+        jLabel55 = new javax.swing.JLabel();
+        jTextField14 = new javax.swing.JTextField();
+        jLabel56 = new javax.swing.JLabel();
+        jTextField15 = new javax.swing.JTextField();
+        jLabel57 = new javax.swing.JLabel();
+        jTextField16 = new javax.swing.JTextField();
+        listAccountPanel = new javax.swing.JPanel();
+        jScrollPane12 = new javax.swing.JScrollPane();
+        jTable9 = new javax.swing.JTable();
+        newAccount = new javax.swing.JButton();
+        accountList = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -338,8 +533,161 @@ public class main extends javax.swing.JFrame {
         supplierPanelOne.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         supplierPanelOne.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setText("View supplier Info");
-        supplierPanelOne.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, -1, -1));
+        jTable10.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null}
+            },
+            new String [] {
+                "Request No."
+            }
+        ));
+        jScrollPane13.setViewportView(jTable10);
+
+        supplierPanelOne.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 220, 570));
+
+        jLabel58.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel58.setText("Supplier Code:");
+        supplierPanelOne.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 25, -1, -1));
+        supplierPanelOne.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 20, 220, 30));
+
+        jLabel5.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel5.setText("Supplier Name:");
+        supplierPanelOne.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 65, -1, -1));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+        supplierPanelOne.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 60, 220, 30));
+
+        jLabel59.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel59.setText("Establishment Name:");
+        supplierPanelOne.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 105, -1, -1));
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        supplierPanelOne.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, 220, 30));
+
+        jLabel60.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel60.setText("Request No.:");
+        supplierPanelOne.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 25, -1, -1));
+        supplierPanelOne.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 20, 150, 30));
+
+        jLabel61.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel61.setText("Date:");
+        supplierPanelOne.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 65, -1, -1));
+
+        jLabel62.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel62.setText("Status:");
+        supplierPanelOne.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 105, -1, -1));
+
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        supplierPanelOne.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 100, 150, 30));
+        supplierPanelOne.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 140, 770, 10));
+
+        jTable11.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Item Code", "Item Name", "Quantity", "Unit Price", "Sub Total"
+            }
+        ));
+        jScrollPane14.setViewportView(jTable11);
+
+        supplierPanelOne.add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, 770, 290));
+
+        jLabel63.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel63.setText("Total:");
+        supplierPanelOne.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 450, -1, -1));
+        supplierPanelOne.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 450, 110, 20));
+
+        jLabel64.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel64.setText("Amount Paid: ");
+        supplierPanelOne.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(698, 480, 90, -1));
+        supplierPanelOne.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 480, 110, 20));
+
+        jLabel65.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel65.setText("Balance Amount:");
+        supplierPanelOne.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 510, -1, -1));
+        supplierPanelOne.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 510, 110, 20));
+
+        jButton6.setText("Fulfilled");
+        supplierPanelOne.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 550, -1, -1));
+
+        jButton9.setText("Pay");
+        supplierPanelOne.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 550, -1, -1));
+        supplierPanelOne.add(jXDatePicker1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 60, 150, -1));
 
         supplierPanel.add(supplierPanelOne, "supplierPanelOne");
 
@@ -347,8 +695,180 @@ public class main extends javax.swing.JFrame {
         supplierPanelTwo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         supplierPanelTwo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel6.setText("stocks received");
-        supplierPanelTwo.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, -1, -1));
+        jButton10.setText("Add");
+        supplierPanelTwo.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
+
+        jButton11.setText("Save");
+        supplierPanelTwo.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 10, -1, -1));
+
+        jTable12.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null}
+            },
+            new String [] {
+                "Request No."
+            }
+        ));
+        jScrollPane15.setViewportView(jTable12);
+
+        supplierPanelTwo.add(jScrollPane15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 220, 570));
+
+        jLabel6.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel6.setText("Supplier Code:");
+        supplierPanelTwo.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 45, -1, -1));
+        supplierPanelTwo.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 40, 150, 30));
+
+        jLabel66.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel66.setText("Supplier Name:");
+        supplierPanelTwo.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 85, -1, -1));
+
+        jLabel67.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel67.setText("Establishment Name:");
+        supplierPanelTwo.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 125, -1, -1));
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        supplierPanelTwo.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, 210, 30));
+
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        supplierPanelTwo.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 180, 30));
+
+        jLabel68.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel68.setText("Request No.:");
+        supplierPanelTwo.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 45, -1, -1));
+        supplierPanelTwo.add(jTextField23, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 40, 150, 30));
+
+        jLabel69.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel69.setText("Date:");
+        supplierPanelTwo.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 85, -1, -1));
+        supplierPanelTwo.add(jXDatePicker2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 80, 150, 30));
+
+        jLabel70.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel70.setText("Status:");
+        supplierPanelTwo.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 125, -1, -1));
+
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        supplierPanelTwo.add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 120, 150, 30));
+        supplierPanelTwo.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 160, 770, 10));
+
+        jTable13.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Item Code", "Item Name", "Quantity Received", "Quantity Pending", "Date Received"
+            }
+        ));
+        jScrollPane16.setViewportView(jTable13);
+
+        supplierPanelTwo.add(jScrollPane16, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 760, 320));
+
+        jLabel71.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel71.setText("Total Offered:");
+        supplierPanelTwo.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 500, -1, -1));
+        supplierPanelTwo.add(jTextField24, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 500, 110, 20));
+
+        jLabel72.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel72.setText("Total Recieved:");
+        supplierPanelTwo.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(753, 530, -1, -1));
+        supplierPanelTwo.add(jTextField25, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 530, 110, 20));
 
         supplierPanel.add(supplierPanelTwo, "supplierPanelTwo");
 
@@ -356,9 +876,175 @@ public class main extends javax.swing.JFrame {
         supplierPanelThree.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         supplierPanelThree.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel7.setText("returns stocks viewing");
-        jLabel7.setToolTipText("");
-        supplierPanelThree.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, -1, -1));
+        jButton12.setText("Add");
+        supplierPanelThree.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
+
+        jButton13.setText("Delete");
+        supplierPanelThree.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 10, -1, -1));
+
+        jTable14.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null}
+            },
+            new String [] {
+                "Request No."
+            }
+        ));
+        jScrollPane17.setViewportView(jTable14);
+
+        supplierPanelThree.add(jScrollPane17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 230, 580));
+
+        jLabel73.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel73.setText("Supplier Code:");
+        supplierPanelThree.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 45, -1, -1));
+        supplierPanelThree.add(jTextField26, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 40, 150, 30));
+
+        jLabel7.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel7.setText("Supplier Name:");
+        supplierPanelThree.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 85, -1, -1));
+
+        jLabel74.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel74.setText(" Establishment Name:");
+        supplierPanelThree.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 125, -1, -1));
+
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        supplierPanelThree.add(jComboBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 180, 30));
+
+        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        supplierPanelThree.add(jComboBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 80, 210, 30));
+
+        jLabel75.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel75.setText("Request No.:");
+        supplierPanelThree.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 45, -1, -1));
+        supplierPanelThree.add(jTextField27, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 40, 150, 30));
+
+        jLabel76.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel76.setText("Date:");
+        supplierPanelThree.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 85, -1, -1));
+        supplierPanelThree.add(jXDatePicker3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 80, 150, 30));
+
+        jLabel77.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel77.setText("Status:");
+        supplierPanelThree.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 125, -1, -1));
+
+        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        supplierPanelThree.add(jComboBox9, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 120, 150, 30));
+
+        jTable15.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "Item Code", "Item Name", "Quantity Recieved", "Return Date", "Unit Price", "Sub Total"
+            }
+        ));
+        jScrollPane18.setViewportView(jTable15);
+
+        supplierPanelThree.add(jScrollPane18, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 760, 350));
+        supplierPanelThree.add(jSeparator10, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 160, 770, 10));
+
+        jLabel78.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel78.setText("Total:");
+        supplierPanelThree.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 530, -1, -1));
+        supplierPanelThree.add(jTextField28, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 530, 110, 20));
 
         supplierPanel.add(supplierPanelThree, "supplierPanelThree");
 
@@ -799,6 +1485,20 @@ public class main extends javax.swing.JFrame {
         });
         miscellanyPanel.add(employees, new org.netbeans.lib.awtextra.AbsoluteConstraints(223, 30, 105, 89));
 
+        accounts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/account.png"))); // NOI18N
+        accounts.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                accountsMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                accountsMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                accountsMouseExited(evt);
+            }
+        });
+        miscellanyPanel.add(accounts, new org.netbeans.lib.awtextra.AbsoluteConstraints(346, 30, 105, 89));
+
         orders.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/orders.png"))); // NOI18N
         orders.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -811,7 +1511,7 @@ public class main extends javax.swing.JFrame {
                 ordersMouseExited(evt);
             }
         });
-        miscellanyPanel.add(orders, new org.netbeans.lib.awtextra.AbsoluteConstraints(346, 30, 105, 89));
+        miscellanyPanel.add(orders, new org.netbeans.lib.awtextra.AbsoluteConstraints(469, 30, 105, 89));
 
         reports.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/reports.png"))); // NOI18N
         reports.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -825,7 +1525,7 @@ public class main extends javax.swing.JFrame {
                 reportsMouseExited(evt);
             }
         });
-        miscellanyPanel.add(reports, new org.netbeans.lib.awtextra.AbsoluteConstraints(469, 30, 105, 89));
+        miscellanyPanel.add(reports, new org.netbeans.lib.awtextra.AbsoluteConstraints(592, 30, 105, 89));
 
         mainMiscellanyPanel.setBackground(new java.awt.Color(255, 255, 255));
         mainMiscellanyPanel.setLayout(new java.awt.CardLayout());
@@ -862,11 +1562,150 @@ public class main extends javax.swing.JFrame {
         miscellanyPanelOne.add(suppierList, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 5, 140, 30));
 
         suppliersPanel.setBackground(new java.awt.Color(255, 255, 255));
+        suppliersPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         suppliersPanel.setLayout(new java.awt.CardLayout());
 
         suppliersPanelOne.setBackground(new java.awt.Color(255, 255, 255));
         suppliersPanelOne.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         suppliersPanelOne.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        suppliersPanelOneMain.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        suppliersPanelOneMain.setLayout(new java.awt.CardLayout());
+
+        supplierProd.setBackground(new java.awt.Color(255, 255, 255));
+        supplierProd.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Product Code", "Product Name", "Description", "Price"
+            }
+        ));
+        jScrollPane3.setViewportView(jTable2);
+
+        supplierProd.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 830, 560));
+
+        suppliersPanelOneMain.add(supplierProd, "supplierProd");
+
+        supplerOrd.setBackground(new java.awt.Color(255, 255, 255));
+        supplerOrd.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Request No.", "Ordered Date", "Status", "Total "
+            }
+        ));
+        jScrollPane4.setViewportView(jTable3);
+
+        supplerOrd.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 850, 580));
+
+        suppliersPanelOneMain.add(supplerOrd, "supplerOrd");
+
+        supplierInfo.setBackground(new java.awt.Color(255, 255, 255));
+        supplierInfo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -927,41 +1766,179 @@ public class main extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        suppliersPanelOne.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 190, 580));
+        supplierInfo.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 220, 590));
 
-        add.setText("Add");
-        suppliersPanelOne.add(add, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, -1, -1));
+        Add.setText("Add");
+        supplierInfo.add(Add, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
 
-        save.setText("Save");
-        suppliersPanelOne.add(save, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, -1, -1));
+        Save.setText("Save");
+        supplierInfo.add(Save, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 10, -1, -1));
 
-        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel11.setText("Supplier Name:");
-        suppliersPanelOne.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, -1, -1));
+        Deactivate.setText("Deactivate");
+        supplierInfo.add(Deactivate, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 10, -1, -1));
+
+        Reactivate.setText("Reactivate");
+        supplierInfo.add(Reactivate, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 10, -1, -1));
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel11.setText("Basic");
+        supplierInfo.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 50, -1, -1));
+        supplierInfo.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 620, 10));
+
+        jLabel29.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel29.setText("Establishment Name: ");
+        supplierInfo.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 135, -1, -1));
+        supplierInfo.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 130, 370, 30));
+
+        jLabel30.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel30.setText("Address:");
+        supplierInfo.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 175, -1, -1));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane2.setViewportView(jTextArea1);
+
+        supplierInfo.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, 450, 120));
+
+        jLabel31.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel31.setText("Contact");
+        supplierInfo.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 320, -1, -1));
+        supplierInfo.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, 620, 10));
+
+        jLabel32.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel32.setText("Supplier Name:");
+        supplierInfo.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 375, -1, -1));
+        supplierInfo.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 370, 370, 30));
+
+        jLabel33.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel33.setText("Telphone No.:");
+        supplierInfo.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 415, -1, -1));
+        supplierInfo.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 410, 370, 30));
+
+        jLabel34.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel34.setText("Mobile No.:");
+        supplierInfo.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 455, -1, -1));
+
+        jTextField4.setToolTipText("");
+        supplierInfo.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 450, 370, 30));
+
+        jLabel20.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel20.setText("Supplier Code:");
+        supplierInfo.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 95, -1, -1));
+        supplierInfo.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 90, 150, 30));
+
+        suppliersPanelOneMain.add(supplierInfo, "supplierInfo");
+
+        suppliersPanelOne.add(suppliersPanelOneMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 0, 880, 603));
+
+        supInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/supinfo.png"))); // NOI18N
+        supInfo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                supInfoMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                supInfoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                supInfoMouseExited(evt);
+            }
+        });
+        suppliersPanelOne.add(supInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 5, 130, 70));
+
+        supProd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/supprod.png"))); // NOI18N
+        supProd.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                supProdMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                supProdMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                supProdMouseExited(evt);
+            }
+        });
+        suppliersPanelOne.add(supProd, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 80, 130, 70));
+
+        supOrd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/supord.png"))); // NOI18N
+        supOrd.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                supOrdMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                supOrdMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                supOrdMouseExited(evt);
+            }
+        });
+        suppliersPanelOne.add(supOrd, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 155, 130, 70));
 
         suppliersPanel.add(suppliersPanelOne, "suppliersPanelOne");
 
         suppliersPanelTwo.setBackground(new java.awt.Color(255, 255, 255));
         suppliersPanelTwo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        suppliersPanelTwo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel20.setText("Supplier List");
+        jTable4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "Supplier Code", "Establishment Name", "Contact Person", "Address", "Telephone No.", "Mobile No."
+            }
+        ));
+        jScrollPane5.setViewportView(jTable4);
 
-        javax.swing.GroupLayout suppliersPanelTwoLayout = new javax.swing.GroupLayout(suppliersPanelTwo);
-        suppliersPanelTwo.setLayout(suppliersPanelTwoLayout);
-        suppliersPanelTwoLayout.setHorizontalGroup(
-            suppliersPanelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(suppliersPanelTwoLayout.createSequentialGroup()
-                .addGap(285, 285, 285)
-                .addComponent(jLabel20)
-                .addContainerGap(680, Short.MAX_VALUE))
-        );
-        suppliersPanelTwoLayout.setVerticalGroup(
-            suppliersPanelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(suppliersPanelTwoLayout.createSequentialGroup()
-                .addGap(144, 144, 144)
-                .addComponent(jLabel20)
-                .addContainerGap(445, Short.MAX_VALUE))
-        );
+        suppliersPanelTwo.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 990, 620));
 
         suppliersPanel.add(suppliersPanelTwo, "suppliersPanelTwo");
 
@@ -1005,49 +1982,154 @@ public class main extends javax.swing.JFrame {
 
         employeesPanelOne.setBackground(new java.awt.Color(255, 255, 255));
         employeesPanelOne.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        employeesPanelOne.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel21.setText("new Employee");
+        jButton1.setText("Add");
+        employeesPanelOne.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, -1, -1));
 
-        javax.swing.GroupLayout employeesPanelOneLayout = new javax.swing.GroupLayout(employeesPanelOne);
-        employeesPanelOne.setLayout(employeesPanelOneLayout);
-        employeesPanelOneLayout.setHorizontalGroup(
-            employeesPanelOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeesPanelOneLayout.createSequentialGroup()
-                .addGap(224, 224, 224)
-                .addComponent(jLabel21)
-                .addContainerGap(729, Short.MAX_VALUE))
-        );
-        employeesPanelOneLayout.setVerticalGroup(
-            employeesPanelOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeesPanelOneLayout.createSequentialGroup()
-                .addGap(164, 164, 164)
-                .addComponent(jLabel21)
-                .addContainerGap(465, Short.MAX_VALUE))
-        );
+        jButton2.setText("Save");
+        employeesPanelOne.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 10, -1, -1));
+
+        jButton3.setText("Delete");
+        employeesPanelOne.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(375, 10, -1, -1));
+
+        jLabel21.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel21.setText("Basic");
+        employeesPanelOne.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 50, -1, -1));
+        employeesPanelOne.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, 460, 20));
+
+        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null}
+            },
+            new String [] {
+                "Employee Name"
+            }
+        ));
+        jScrollPane6.setViewportView(jTable5);
+
+        employeesPanelOne.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 210, 620));
+
+        jLabel27.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel27.setText("Employee Code:");
+        employeesPanelOne.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 95, -1, -1));
+        employeesPanelOne.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 150, 30));
+
+        jLabel28.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel28.setText("Employee Name:");
+        employeesPanelOne.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 135, -1, -1));
+        employeesPanelOne.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 130, 310, 30));
+
+        jLabel35.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel35.setText("Position:");
+        employeesPanelOne.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 175, -1, -1));
+
+        jTextField8.setText("Combo Box dapat to");
+        employeesPanelOne.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, 150, 30));
+
+        jLabel36.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel36.setText("Date Hired:");
+        employeesPanelOne.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 215, -1, -1));
+
+        jTextField9.setText("Date Picker dapat to");
+        employeesPanelOne.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 210, 150, 30));
+
+        jLabel37.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel37.setText("Contact");
+        jLabel37.setToolTipText("");
+        employeesPanelOne.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 390, -1, -1));
+        employeesPanelOne.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 420, 460, 10));
+
+        jLabel38.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel38.setText("Address:");
+        employeesPanelOne.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 430, -1, -1));
+
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        jScrollPane7.setViewportView(jTextArea2);
+
+        employeesPanelOne.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 430, 350, 70));
+
+        jLabel39.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel39.setText("Telephone No.:");
+        employeesPanelOne.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 515, -1, -1));
+        employeesPanelOne.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 510, 220, 30));
+
+        jLabel40.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel40.setText("Mobile No.:");
+        employeesPanelOne.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 555, -1, -1));
+        employeesPanelOne.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 550, 240, 30));
+
+        jLabel41.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel41.setText("Picture");
+        employeesPanelOne.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 50, -1, -1));
+        employeesPanelOne.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 80, 280, 10));
+
+        jScrollPane8.setViewportView(jTextPane1);
+
+        employeesPanelOne.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 92, 220, 160));
+
+        jButton4.setText("Browse");
+        employeesPanelOne.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 260, -1, -1));
+
+        jButton5.setText("Cancel");
+        employeesPanelOne.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 260, -1, -1));
 
         employeesPanel.add(employeesPanelOne, "employeesPanelOne");
 
         employeesPanelTwo.setBackground(new java.awt.Color(255, 255, 255));
         employeesPanelTwo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        employeesPanelTwo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel22.setText("Employee List");
+        jTable6.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Employee Code", "Employee Name", "Position", "Date Hired"
+            }
+        ));
+        jScrollPane9.setViewportView(jTable6);
 
-        javax.swing.GroupLayout employeesPanelTwoLayout = new javax.swing.GroupLayout(employeesPanelTwo);
-        employeesPanelTwo.setLayout(employeesPanelTwoLayout);
-        employeesPanelTwoLayout.setHorizontalGroup(
-            employeesPanelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeesPanelTwoLayout.createSequentialGroup()
-                .addGap(305, 305, 305)
-                .addComponent(jLabel22)
-                .addContainerGap(652, Short.MAX_VALUE))
-        );
-        employeesPanelTwoLayout.setVerticalGroup(
-            employeesPanelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeesPanelTwoLayout.createSequentialGroup()
-                .addGap(126, 126, 126)
-                .addComponent(jLabel22)
-                .addContainerGap(503, Short.MAX_VALUE))
-        );
+        employeesPanelTwo.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 1000, 620));
 
         employeesPanel.add(employeesPanelTwo, "employeesPanelTwo");
 
@@ -1059,8 +2141,66 @@ public class main extends javax.swing.JFrame {
         miscellanyPanelThree.setPreferredSize(new java.awt.Dimension(1024, 645));
         miscellanyPanelThree.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel23.setText("Order Management");
-        miscellanyPanelThree.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 110, -1, -1));
+        jTable7.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Transaction No.", "Date", "Items", "Assembled by"
+            }
+        ));
+        jScrollPane10.setViewportView(jTable7);
+
+        miscellanyPanelThree.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 990, 620));
 
         mainMiscellanyPanel.add(miscellanyPanelThree, "miscellanyPanelThree");
 
@@ -1117,17 +2257,198 @@ public class main extends javax.swing.JFrame {
         reportsPanelOne.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         reportsPanelOne.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel24.setText("Sales Report");
-        reportsPanelOne.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 150, -1, -1));
+        salesReport.setBackground(new java.awt.Color(255, 255, 255));
+        salesReport.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        salesReport.setLayout(new java.awt.CardLayout());
+
+        dailySalesReport.setBackground(new java.awt.Color(255, 255, 255));
+        dailySalesReport.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel22.setText("Daily Sales Report");
+        dailySalesReport.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, -1, -1));
+
+        salesReport.add(dailySalesReport, "dailySalesReport");
+
+        weeklySalesReport.setBackground(new java.awt.Color(255, 255, 255));
+        weeklySalesReport.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel23.setText("Weekly Sales Report");
+        weeklySalesReport.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, -1, -1));
+
+        salesReport.add(weeklySalesReport, "weeklySalesReport");
+
+        monthlySalesReport.setBackground(new java.awt.Color(255, 255, 255));
+        monthlySalesReport.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel24.setText("Monthly Sales Report");
+        monthlySalesReport.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, -1, -1));
+
+        salesReport.add(monthlySalesReport, "monthlySalesReport");
+
+        yearlySalesReport.setBackground(new java.awt.Color(255, 255, 255));
+        yearlySalesReport.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel25.setText("Yearly Sales Report");
+        yearlySalesReport.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, -1));
+
+        salesReport.add(yearlySalesReport, "yearlySalesReport");
+
+        reportsPanelOne.add(salesReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 0, 880, 603));
+
+        dailySales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/daily.png"))); // NOI18N
+        dailySales.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dailySalesMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                dailySalesMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                dailySalesMouseExited(evt);
+            }
+        });
+        reportsPanelOne.add(dailySales, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 5, 130, 70));
+
+        weeklySales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/weekly.png"))); // NOI18N
+        weeklySales.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                weeklySalesMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                weeklySalesMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                weeklySalesMouseExited(evt);
+            }
+        });
+        reportsPanelOne.add(weeklySales, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 80, 130, 70));
+
+        monthlySales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/montlhy.png"))); // NOI18N
+        monthlySales.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                monthlySalesMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                monthlySalesMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                monthlySalesMouseExited(evt);
+            }
+        });
+        reportsPanelOne.add(monthlySales, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 155, 130, 70));
+
+        yearlySales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/yearly.png"))); // NOI18N
+        yearlySales.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                yearlySalesMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                yearlySalesMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                yearlySalesMouseExited(evt);
+            }
+        });
+        reportsPanelOne.add(yearlySales, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 230, 130, 70));
 
         reportsPanel.add(reportsPanelOne, "reportsPanelOne");
 
         reportsPanelTwo.setBackground(new java.awt.Color(255, 255, 255));
-        reportsPanelTwo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         reportsPanelTwo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel25.setText("Purchasing Reports");
-        reportsPanelTwo.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 180, -1, -1));
+        purchasingReport.setBackground(new java.awt.Color(255, 255, 255));
+        purchasingReport.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        purchasingReport.setLayout(new java.awt.CardLayout());
+
+        dailyPurchasingReport.setBackground(new java.awt.Color(255, 255, 255));
+        dailyPurchasingReport.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel26.setText("Daily Purchasing Report");
+        dailyPurchasingReport.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, -1, -1));
+
+        purchasingReport.add(dailyPurchasingReport, "dailyPurchasingReport");
+
+        weeklyPurchasingReport.setBackground(new java.awt.Color(255, 255, 255));
+        weeklyPurchasingReport.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel42.setText("Weekly Purchasing Report");
+        weeklyPurchasingReport.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, -1, -1));
+
+        purchasingReport.add(weeklyPurchasingReport, "weeklyPurchasingReport");
+
+        monthlyPurchasingReport.setBackground(new java.awt.Color(255, 255, 255));
+        monthlyPurchasingReport.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel43.setText("Monthly Purchasing Report");
+        monthlyPurchasingReport.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, -1, -1));
+
+        purchasingReport.add(monthlyPurchasingReport, "monthlyPurchasingReport");
+
+        yearlyPurchasingReport.setBackground(new java.awt.Color(255, 255, 255));
+        yearlyPurchasingReport.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel44.setText("Yearly Purchasing Report");
+        yearlyPurchasingReport.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, -1, -1));
+
+        purchasingReport.add(yearlyPurchasingReport, "yearlyPurchasingReport");
+
+        reportsPanelTwo.add(purchasingReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 0, 880, 603));
+
+        dailyPurchasing.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/daily.png"))); // NOI18N
+        dailyPurchasing.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dailyPurchasingMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                dailyPurchasingMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                dailyPurchasingMouseExited(evt);
+            }
+        });
+        reportsPanelTwo.add(dailyPurchasing, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 5, 130, 70));
+
+        weeklyPurchasing.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/weekly.png"))); // NOI18N
+        weeklyPurchasing.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                weeklyPurchasingMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                weeklyPurchasingMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                weeklyPurchasingMouseExited(evt);
+            }
+        });
+        reportsPanelTwo.add(weeklyPurchasing, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 80, 130, 70));
+
+        monthlyPurchasing.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/montlhy.png"))); // NOI18N
+        monthlyPurchasing.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                monthlyPurchasingMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                monthlyPurchasingMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                monthlyPurchasingMouseExited(evt);
+            }
+        });
+        reportsPanelTwo.add(monthlyPurchasing, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 155, 130, 70));
+
+        yearlyPurchasing.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/yearly.png"))); // NOI18N
+        yearlyPurchasing.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                yearlyPurchasingMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                yearlyPurchasingMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                yearlyPurchasingMouseExited(evt);
+            }
+        });
+        reportsPanelTwo.add(yearlyPurchasing, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 230, 130, 70));
 
         reportsPanel.add(reportsPanelTwo, "reportsPanelTwo");
 
@@ -1135,14 +2456,275 @@ public class main extends javax.swing.JFrame {
         reportsPanelThree.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         reportsPanelThree.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel26.setText("Inventory Report");
-        reportsPanelThree.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 140, -1, -1));
+        inventoryReport.setBackground(new java.awt.Color(255, 255, 255));
+        inventoryReport.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        inventoryReport.setLayout(new java.awt.CardLayout());
+
+        dailyInventoryReport.setBackground(new java.awt.Color(255, 255, 255));
+        dailyInventoryReport.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel45.setText("daily inventory report");
+        dailyInventoryReport.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, -1, -1));
+
+        inventoryReport.add(dailyInventoryReport, "dailyInventoryReport");
+
+        weeklyInventoryReport.setBackground(new java.awt.Color(255, 255, 255));
+        weeklyInventoryReport.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel46.setText("Weekly Inventory Report");
+        weeklyInventoryReport.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 170, -1, -1));
+
+        inventoryReport.add(weeklyInventoryReport, "weeklyInventoryReport");
+
+        monthlyInventoryReport.setBackground(new java.awt.Color(255, 255, 255));
+        monthlyInventoryReport.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel47.setText("Monthly Inventory Report");
+        monthlyInventoryReport.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 170, -1, -1));
+
+        inventoryReport.add(monthlyInventoryReport, "monthlyInventoryReport");
+
+        yearlyInventoryReport.setBackground(new java.awt.Color(255, 255, 255));
+        yearlyInventoryReport.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel48.setText("yearly Inventory Report");
+        yearlyInventoryReport.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 120, -1, -1));
+
+        inventoryReport.add(yearlyInventoryReport, "yearlyInventoryReport");
+
+        reportsPanelThree.add(inventoryReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 0, 880, 603));
+
+        dailyInventory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/daily.png"))); // NOI18N
+        dailyInventory.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dailyInventoryMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                dailyInventoryMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                dailyInventoryMouseExited(evt);
+            }
+        });
+        reportsPanelThree.add(dailyInventory, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 5, 130, 70));
+
+        weeklyInventory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/weekly.png"))); // NOI18N
+        weeklyInventory.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                weeklyInventoryMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                weeklyInventoryMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                weeklyInventoryMouseExited(evt);
+            }
+        });
+        reportsPanelThree.add(weeklyInventory, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 80, 130, 70));
+
+        monthlyInventory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/montlhy.png"))); // NOI18N
+        monthlyInventory.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                monthlyInventoryMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                monthlyInventoryMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                monthlyInventoryMouseExited(evt);
+            }
+        });
+        reportsPanelThree.add(monthlyInventory, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 155, 130, 70));
+
+        yearlyInventory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/yearly.png"))); // NOI18N
+        yearlyInventory.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                yearlyInventoryMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                yearlyInventoryMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                yearlyInventoryMouseExited(evt);
+            }
+        });
+        reportsPanelThree.add(yearlyInventory, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 230, 130, 70));
 
         reportsPanel.add(reportsPanelThree, "reportsPanelThree");
 
         miscellanyPanelFour.add(reportsPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1024, 605));
 
         mainMiscellanyPanel.add(miscellanyPanelFour, "miscellanyPanelFour");
+
+        miscellanyPanelFive.setBackground(new java.awt.Color(255, 255, 255));
+        miscellanyPanelFive.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        miscellanyPanelFive.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        accountPanel.setBackground(new java.awt.Color(255, 255, 255));
+        accountPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        accountPanel.setLayout(new java.awt.CardLayout());
+
+        newAccountPanel.setBackground(new java.awt.Color(255, 255, 255));
+        newAccountPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTable8.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null},
+                {null}
+            },
+            new String [] {
+                "Account Name"
+            }
+        ));
+        jScrollPane11.setViewportView(jTable8);
+
+        newAccountPanel.add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 230, 580));
+
+        jButton7.setText("Add");
+        newAccountPanel.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
+
+        jButton8.setText("Save");
+        newAccountPanel.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 10, -1, -1));
+
+        jLabel49.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel49.setText("Basic");
+        newAccountPanel.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 50, -1, -1));
+        newAccountPanel.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 620, 10));
+
+        jLabel50.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel50.setText("Account Code:");
+        newAccountPanel.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 95, -1, -1));
+        newAccountPanel.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 90, 150, 30));
+
+        jLabel51.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel51.setText("Username:");
+        newAccountPanel.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 135, -1, -1));
+        newAccountPanel.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, 330, 30));
+
+        jLabel52.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel52.setText("Password:");
+        newAccountPanel.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 175, -1, -1));
+
+        jPasswordField1.setText("jPasswordField1");
+        newAccountPanel.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 170, 330, 30));
+
+        jLabel53.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel53.setText("Confirm Password:");
+        newAccountPanel.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 215, -1, -1));
+
+        jPasswordField2.setText("jPasswordField2");
+        newAccountPanel.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 210, 330, 30));
+
+        jLabel54.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel54.setText("Contact");
+        newAccountPanel.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 280, -1, -1));
+        newAccountPanel.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 310, 620, 10));
+
+        jLabel55.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel55.setText("Employee Name:");
+        newAccountPanel.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 370, -1, -1));
+        newAccountPanel.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 360, 330, 30));
+
+        jLabel56.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel56.setText("Position:");
+        newAccountPanel.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 410, -1, -1));
+
+        jTextField15.setText("Dapat combo box to");
+        newAccountPanel.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 400, 150, 30));
+
+        jLabel57.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel57.setText("Employee No.:");
+        newAccountPanel.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 325, -1, -1));
+        newAccountPanel.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 320, 150, 30));
+
+        accountPanel.add(newAccountPanel, "newAccountPanel");
+
+        listAccountPanel.setBackground(new java.awt.Color(255, 255, 255));
+        listAccountPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTable9.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Account No.", "Employee No.", "Username", "Password", "Confirm Password"
+            }
+        ));
+        jScrollPane12.setViewportView(jTable9);
+
+        listAccountPanel.add(jScrollPane12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 1000, 580));
+
+        accountPanel.add(listAccountPanel, "listAccountPanel");
+
+        miscellanyPanelFive.add(accountPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1024, 605));
+
+        newAccount.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/na.png"))); // NOI18N
+        newAccount.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                newAccountMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                newAccountMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                newAccountMouseExited(evt);
+            }
+        });
+        miscellanyPanelFive.add(newAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 5, 140, 30));
+
+        accountList.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/al.png"))); // NOI18N
+        accountList.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                accountListMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                accountListMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                accountListMouseExited(evt);
+            }
+        });
+        miscellanyPanelFive.add(accountList, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 5, 140, 30));
+
+        mainMiscellanyPanel.add(miscellanyPanelFive, "miscellanyPanelFive");
 
         miscellanyPanel.add(mainMiscellanyPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 123, 1024, 645));
 
@@ -1763,6 +3345,280 @@ public class main extends javax.swing.JFrame {
         admin.show(reportsPanel, "reportsPanelThree");
     }//GEN-LAST:event_invtryMouseClicked
 
+    private void supInfoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_supInfoMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/supinfohvr.png"));
+        supInfo.setIcon(ico);
+    }//GEN-LAST:event_supInfoMouseEntered
+
+    private void supInfoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_supInfoMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/supinfo.png"));
+        supInfo.setIcon(ico);
+    }//GEN-LAST:event_supInfoMouseExited
+
+    private void supInfoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_supInfoMouseClicked
+        CardLayout admin = (CardLayout) suppliersPanelOneMain.getLayout();
+        admin.show(suppliersPanelOneMain, "supplierInfo");
+    }//GEN-LAST:event_supInfoMouseClicked
+
+    private void supProdMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_supProdMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/supprodhvr.png"));
+        supProd.setIcon(ico);
+    }//GEN-LAST:event_supProdMouseEntered
+
+    private void supProdMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_supProdMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/supprod.png"));
+        supProd.setIcon(ico);
+    }//GEN-LAST:event_supProdMouseExited
+
+    private void supProdMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_supProdMouseClicked
+        CardLayout admin = (CardLayout) suppliersPanelOneMain.getLayout();
+        admin.show(suppliersPanelOneMain, "supplierProd");
+    }//GEN-LAST:event_supProdMouseClicked
+
+    private void supOrdMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_supOrdMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/supordhvr.png"));
+        supOrd.setIcon(ico);
+    }//GEN-LAST:event_supOrdMouseEntered
+
+    private void supOrdMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_supOrdMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/supord.png"));
+        supOrd.setIcon(ico);
+    }//GEN-LAST:event_supOrdMouseExited
+
+    private void supOrdMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_supOrdMouseClicked
+        CardLayout admin = (CardLayout) suppliersPanelOneMain.getLayout();
+        admin.show(suppliersPanelOneMain, "supplerOrd");
+    }//GEN-LAST:event_supOrdMouseClicked
+
+    private void dailySalesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailySalesMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/dailyhvr.png"));
+        dailySales.setIcon(ico);
+    }//GEN-LAST:event_dailySalesMouseEntered
+
+    private void dailySalesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailySalesMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/daily.png"));
+        dailySales.setIcon(ico);
+    }//GEN-LAST:event_dailySalesMouseExited
+
+    private void dailySalesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailySalesMouseClicked
+        CardLayout admin = (CardLayout) salesReport.getLayout();
+        admin.show(salesReport, "dailySalesReport");
+    }//GEN-LAST:event_dailySalesMouseClicked
+
+    private void weeklySalesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklySalesMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weeklyhvr.png"));
+        weeklySales.setIcon(ico);
+    }//GEN-LAST:event_weeklySalesMouseEntered
+
+    private void weeklySalesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklySalesMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        weeklySales.setIcon(ico);
+    }//GEN-LAST:event_weeklySalesMouseExited
+
+    private void weeklySalesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklySalesMouseClicked
+        CardLayout admin = (CardLayout) salesReport.getLayout();
+        admin.show(salesReport, "weeklySalesReport");
+    }//GEN-LAST:event_weeklySalesMouseClicked
+
+    private void monthlySalesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlySalesMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhyhvr.png"));
+        monthlySales.setIcon(ico);
+    }//GEN-LAST:event_monthlySalesMouseEntered
+
+    private void monthlySalesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlySalesMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        monthlySales.setIcon(ico);
+    }//GEN-LAST:event_monthlySalesMouseExited
+
+    private void monthlySalesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlySalesMouseClicked
+        CardLayout admin = (CardLayout) salesReport.getLayout();
+        admin.show(salesReport, "monthlySalesReport");
+    }//GEN-LAST:event_monthlySalesMouseClicked
+
+    private void yearlySalesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlySalesMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearlyhvr.png"));
+        yearlySales.setIcon(ico);
+    }//GEN-LAST:event_yearlySalesMouseEntered
+
+    private void yearlySalesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlySalesMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        yearlySales.setIcon(ico);
+    }//GEN-LAST:event_yearlySalesMouseExited
+
+    private void yearlySalesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlySalesMouseClicked
+        CardLayout admin = (CardLayout) salesReport.getLayout();
+        admin.show(salesReport, "yearlySalesReport");
+    }//GEN-LAST:event_yearlySalesMouseClicked
+
+    private void dailyPurchasingMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailyPurchasingMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/dailyhvr.png"));
+        dailyPurchasing.setIcon(ico);
+    }//GEN-LAST:event_dailyPurchasingMouseEntered
+
+    private void dailyPurchasingMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailyPurchasingMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/daily.png"));
+        dailyPurchasing.setIcon(ico);
+    }//GEN-LAST:event_dailyPurchasingMouseExited
+
+    private void dailyPurchasingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailyPurchasingMouseClicked
+        CardLayout admin = (CardLayout) purchasingReport.getLayout();
+        admin.show(purchasingReport, "dailyPurchasingReport");
+    }//GEN-LAST:event_dailyPurchasingMouseClicked
+
+    private void weeklyPurchasingMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklyPurchasingMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weeklyhvr.png"));
+        weeklyPurchasing.setIcon(ico);
+    }//GEN-LAST:event_weeklyPurchasingMouseEntered
+
+    private void weeklyPurchasingMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklyPurchasingMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        weeklyPurchasing.setIcon(ico);
+    }//GEN-LAST:event_weeklyPurchasingMouseExited
+
+    private void weeklyPurchasingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklyPurchasingMouseClicked
+        CardLayout admin = (CardLayout) purchasingReport.getLayout();
+        admin.show(purchasingReport, "weeklyPurchasingReport");
+    }//GEN-LAST:event_weeklyPurchasingMouseClicked
+
+    private void monthlyPurchasingMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlyPurchasingMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhyhvr.png"));
+        monthlyPurchasing.setIcon(ico);
+    }//GEN-LAST:event_monthlyPurchasingMouseEntered
+
+    private void monthlyPurchasingMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlyPurchasingMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        monthlyPurchasing.setIcon(ico);
+    }//GEN-LAST:event_monthlyPurchasingMouseExited
+
+    private void monthlyPurchasingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlyPurchasingMouseClicked
+        CardLayout admin = (CardLayout) purchasingReport.getLayout();
+        admin.show(purchasingReport, "monthlyPurchasingReport");
+    }//GEN-LAST:event_monthlyPurchasingMouseClicked
+
+    private void yearlyPurchasingMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlyPurchasingMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearlyhvr.png"));
+        yearlyPurchasing.setIcon(ico);
+    }//GEN-LAST:event_yearlyPurchasingMouseEntered
+
+    private void yearlyPurchasingMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlyPurchasingMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        yearlyPurchasing.setIcon(ico);
+    }//GEN-LAST:event_yearlyPurchasingMouseExited
+
+    private void yearlyPurchasingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlyPurchasingMouseClicked
+        CardLayout admin = (CardLayout) purchasingReport.getLayout();
+        admin.show(purchasingReport, "yearlyPurchasingReport");
+    }//GEN-LAST:event_yearlyPurchasingMouseClicked
+
+    private void dailyInventoryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailyInventoryMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/dailyhvr.png"));
+        dailyInventory.setIcon(ico);
+    }//GEN-LAST:event_dailyInventoryMouseEntered
+
+    private void dailyInventoryMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailyInventoryMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/daily.png"));
+        dailyInventory.setIcon(ico);
+    }//GEN-LAST:event_dailyInventoryMouseExited
+
+    private void dailyInventoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailyInventoryMouseClicked
+        CardLayout admin = (CardLayout) inventoryReport.getLayout();
+        admin.show(inventoryReport, "dailyInventoryReport");
+    }//GEN-LAST:event_dailyInventoryMouseClicked
+
+    private void weeklyInventoryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklyInventoryMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weeklyhvr.png"));
+        weeklyInventory.setIcon(ico);
+    }//GEN-LAST:event_weeklyInventoryMouseEntered
+
+    private void weeklyInventoryMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklyInventoryMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        weeklyInventory.setIcon(ico);
+    }//GEN-LAST:event_weeklyInventoryMouseExited
+
+    private void weeklyInventoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklyInventoryMouseClicked
+        CardLayout admin = (CardLayout) inventoryReport.getLayout();
+        admin.show(inventoryReport, "weeklyInventoryReport");
+    }//GEN-LAST:event_weeklyInventoryMouseClicked
+
+    private void monthlyInventoryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlyInventoryMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhyhvr.png"));
+        monthlyInventory.setIcon(ico);
+    }//GEN-LAST:event_monthlyInventoryMouseEntered
+
+    private void monthlyInventoryMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlyInventoryMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        monthlyInventory.setIcon(ico);
+    }//GEN-LAST:event_monthlyInventoryMouseExited
+
+    private void monthlyInventoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlyInventoryMouseClicked
+        CardLayout admin = (CardLayout) inventoryReport.getLayout();
+        admin.show(inventoryReport, "monthlyInventoryReport");
+    }//GEN-LAST:event_monthlyInventoryMouseClicked
+
+    private void yearlyInventoryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlyInventoryMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearlyhvr.png"));
+        yearlyInventory.setIcon(ico);
+    }//GEN-LAST:event_yearlyInventoryMouseEntered
+
+    private void yearlyInventoryMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlyInventoryMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        yearlyInventory.setIcon(ico);
+    }//GEN-LAST:event_yearlyInventoryMouseExited
+
+    private void yearlyInventoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlyInventoryMouseClicked
+        CardLayout admin = (CardLayout) inventoryReport.getLayout();
+        admin.show(inventoryReport, "yearlyInventoryReport");
+    }//GEN-LAST:event_yearlyInventoryMouseClicked
+
+    private void accountsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_accountsMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/accounthvr.png"));
+        accounts.setIcon(ico);
+    }//GEN-LAST:event_accountsMouseEntered
+
+    private void accountsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_accountsMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/account.png"));
+        accounts.setIcon(ico);
+    }//GEN-LAST:event_accountsMouseExited
+
+    private void accountsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_accountsMouseClicked
+        CardLayout admin = (CardLayout) mainMiscellanyPanel.getLayout();
+        admin.show(mainMiscellanyPanel, "miscellanyPanelFive");
+    }//GEN-LAST:event_accountsMouseClicked
+
+    private void newAccountMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newAccountMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/nahvr.png"));
+        newAccount.setIcon(ico);
+    }//GEN-LAST:event_newAccountMouseEntered
+
+    private void newAccountMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newAccountMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/na.png"));
+        newAccount.setIcon(ico);
+    }//GEN-LAST:event_newAccountMouseExited
+
+    private void newAccountMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newAccountMouseClicked
+        CardLayout admin = (CardLayout) accountPanel.getLayout();
+        admin.show(accountPanel, "newAccountPanel");
+    }//GEN-LAST:event_newAccountMouseClicked
+
+    private void accountListMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_accountListMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/alhvr.png"));
+        accountList.setIcon(ico);
+    }//GEN-LAST:event_accountListMouseEntered
+
+    private void accountListMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_accountListMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/al.png"));
+        accountList.setIcon(ico);
+    }//GEN-LAST:event_accountListMouseExited
+
+    private void accountListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_accountListMouseClicked
+        CardLayout admin = (CardLayout) accountPanel.getLayout();
+        admin.show(accountPanel, "listAccountPanel");
+    }//GEN-LAST:event_accountListMouseClicked
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1775,7 +3631,7 @@ public class main extends javax.swing.JFrame {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    javax.swing.UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
                     break;
                 }
             }
@@ -1799,7 +3655,13 @@ public class main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton add;
+    private javax.swing.JButton Add;
+    private javax.swing.JButton Deactivate;
+    private javax.swing.JButton Reactivate;
+    private javax.swing.JButton Save;
+    private javax.swing.JButton accountList;
+    private javax.swing.JPanel accountPanel;
+    private javax.swing.JButton accounts;
     private javax.swing.JButton adjustStock;
     private javax.swing.JButton archery;
     private javax.swing.JLabel back1;
@@ -1810,6 +3672,12 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel close2;
     private javax.swing.JLabel close3;
     private javax.swing.JButton currentStock;
+    private javax.swing.JButton dailyInventory;
+    private javax.swing.JPanel dailyInventoryReport;
+    private javax.swing.JButton dailyPurchasing;
+    private javax.swing.JPanel dailyPurchasingReport;
+    private javax.swing.JButton dailySales;
+    private javax.swing.JPanel dailySalesReport;
     private javax.swing.JButton employeeList;
     private javax.swing.JButton employees;
     private javax.swing.JPanel employeesPanel;
@@ -1820,7 +3688,30 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel inventoryPanelOne;
     private javax.swing.JPanel inventoryPanelThree;
     private javax.swing.JPanel inventoryPanelTwo;
+    private javax.swing.JPanel inventoryReport;
     private javax.swing.JButton invtry;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> jComboBox4;
+    private javax.swing.JComboBox<String> jComboBox5;
+    private javax.swing.JComboBox<String> jComboBox6;
+    private javax.swing.JComboBox<String> jComboBox7;
+    private javax.swing.JComboBox<String> jComboBox8;
+    private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1840,17 +3731,147 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JPasswordField jPasswordField2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JScrollPane jScrollPane11;
+    private javax.swing.JScrollPane jScrollPane12;
+    private javax.swing.JScrollPane jScrollPane13;
+    private javax.swing.JScrollPane jScrollPane14;
+    private javax.swing.JScrollPane jScrollPane15;
+    private javax.swing.JScrollPane jScrollPane16;
+    private javax.swing.JScrollPane jScrollPane17;
+    private javax.swing.JScrollPane jScrollPane18;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator10;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JSeparator jSeparator7;
+    private javax.swing.JSeparator jSeparator8;
+    private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable10;
+    private javax.swing.JTable jTable11;
+    private javax.swing.JTable jTable12;
+    private javax.swing.JTable jTable13;
+    private javax.swing.JTable jTable14;
+    private javax.swing.JTable jTable15;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable3;
+    private javax.swing.JTable jTable4;
+    private javax.swing.JTable jTable5;
+    private javax.swing.JTable jTable6;
+    private javax.swing.JTable jTable7;
+    private javax.swing.JTable jTable8;
+    private javax.swing.JTable jTable9;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
+    private javax.swing.JTextField jTextField18;
+    private javax.swing.JTextField jTextField19;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField20;
+    private javax.swing.JTextField jTextField21;
+    private javax.swing.JTextField jTextField22;
+    private javax.swing.JTextField jTextField23;
+    private javax.swing.JTextField jTextField24;
+    private javax.swing.JTextField jTextField25;
+    private javax.swing.JTextField jTextField26;
+    private javax.swing.JTextField jTextField27;
+    private javax.swing.JTextField jTextField28;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextPane jTextPane1;
+    private org.jdesktop.swingx.JXDatePicker jXDatePicker1;
+    private org.jdesktop.swingx.JXDatePicker jXDatePicker2;
+    private org.jdesktop.swingx.JXDatePicker jXDatePicker3;
     private javax.swing.JLabel label;
     private javax.swing.JButton ledger;
+    private javax.swing.JPanel listAccountPanel;
     private javax.swing.JButton logOut1;
     private javax.swing.JButton logOut2;
     private javax.swing.JButton logOut3;
@@ -1860,10 +3881,19 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel mainPurchasingPanel;
     private javax.swing.JButton miscellany;
     private javax.swing.JPanel miscellanyPanel;
+    private javax.swing.JPanel miscellanyPanelFive;
     private javax.swing.JPanel miscellanyPanelFour;
     private javax.swing.JPanel miscellanyPanelOne;
     private javax.swing.JPanel miscellanyPanelThree;
     private javax.swing.JPanel miscellanyPanelTwo;
+    private javax.swing.JButton monthlyInventory;
+    private javax.swing.JPanel monthlyInventoryReport;
+    private javax.swing.JButton monthlyPurchasing;
+    private javax.swing.JPanel monthlyPurchasingReport;
+    private javax.swing.JButton monthlySales;
+    private javax.swing.JPanel monthlySalesReport;
+    private javax.swing.JButton newAccount;
+    private javax.swing.JPanel newAccountPanel;
     private javax.swing.JButton newEmployee;
     private javax.swing.JButton newProduct;
     private javax.swing.JButton newSupplier;
@@ -1884,6 +3914,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JButton purchasedOrder;
     private javax.swing.JButton purchasing;
     private javax.swing.JPanel purchasingPanel;
+    private javax.swing.JPanel purchasingReport;
     private javax.swing.JButton reOrderPoint;
     private javax.swing.JButton receivedStock;
     private javax.swing.JButton reports;
@@ -1893,7 +3924,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel reportsPanelTwo;
     private javax.swing.JButton returnsStock;
     private javax.swing.JButton sales;
-    private javax.swing.JButton save;
+    private javax.swing.JPanel salesReport;
     private javax.swing.JButton selectSupplier;
     private javax.swing.JButton stocks;
     private javax.swing.JPanel stocksPanel;
@@ -1904,17 +3935,36 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel subPurchaseListPanelOne;
     private javax.swing.JPanel subPurchaseListPanelThree;
     private javax.swing.JPanel subPurchaseListPanelTwo;
+    private javax.swing.JButton supInfo;
+    private javax.swing.JButton supOrd;
+    private javax.swing.JButton supProd;
     private javax.swing.JButton suppierList;
+    private javax.swing.JPanel supplerOrd;
+    private javax.swing.JPanel supplierInfo;
     private javax.swing.JPanel supplierPanel;
     private javax.swing.JPanel supplierPanelOne;
     private javax.swing.JPanel supplierPanelThree;
     private javax.swing.JPanel supplierPanelTwo;
+    private javax.swing.JPanel supplierProd;
     private javax.swing.JButton suppliers;
     private javax.swing.JPanel suppliersPanel;
     private javax.swing.JPanel suppliersPanelOne;
+    private javax.swing.JPanel suppliersPanelOneMain;
     private javax.swing.JPanel suppliersPanelTwo;
     private javax.swing.JButton unpaidOrder;
     private javax.swing.JButton unreceivedOrder;
+    private javax.swing.JButton weeklyInventory;
+    private javax.swing.JPanel weeklyInventoryReport;
+    private javax.swing.JButton weeklyPurchasing;
+    private javax.swing.JPanel weeklyPurchasingReport;
+    private javax.swing.JButton weeklySales;
+    private javax.swing.JPanel weeklySalesReport;
     private javax.swing.JPanel welcomePanel;
+    private javax.swing.JButton yearlyInventory;
+    private javax.swing.JPanel yearlyInventoryReport;
+    private javax.swing.JButton yearlyPurchasing;
+    private javax.swing.JPanel yearlyPurchasingReport;
+    private javax.swing.JButton yearlySales;
+    private javax.swing.JPanel yearlySalesReport;
     // End of variables declaration//GEN-END:variables
 }
