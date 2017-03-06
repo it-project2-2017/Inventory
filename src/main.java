@@ -253,6 +253,10 @@ public class main extends javax.swing.JFrame {
         jScrollPane31 = new javax.swing.JScrollPane();
         jTable28 = new javax.swing.JTable();
         inventoryPanelFour = new javax.swing.JPanel();
+        adjustRaw = new javax.swing.JButton();
+        adjustFin = new javax.swing.JButton();
+        adjustPanel = new javax.swing.JPanel();
+        adjustPanelOne = new javax.swing.JPanel();
         jLabel103 = new javax.swing.JLabel();
         jScrollPane35 = new javax.swing.JScrollPane();
         jTable32 = new javax.swing.JTable();
@@ -272,6 +276,18 @@ public class main extends javax.swing.JFrame {
         jScrollPane36 = new javax.swing.JScrollPane();
         jTable33 = new javax.swing.JTable();
         jComboBox14 = new javax.swing.JComboBox<>();
+        adjustPanelTwo = new javax.swing.JPanel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel115 = new javax.swing.JLabel();
+        jLabel116 = new javax.swing.JLabel();
+        jXDatePicker6 = new org.jdesktop.swingx.JXDatePicker();
+        jComboBox15 = new javax.swing.JComboBox<>();
+        jLabel117 = new javax.swing.JLabel();
+        jLabel118 = new javax.swing.JLabel();
+        jTextField43 = new javax.swing.JTextField();
+        jComboBox16 = new javax.swing.JComboBox<>();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable3 = new javax.swing.JTable();
         jLabel3 = new javax.swing.JLabel();
         miscellanyPanel = new javax.swing.JPanel();
         close3 = new javax.swing.JLabel();
@@ -304,13 +320,11 @@ public class main extends javax.swing.JFrame {
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -346,8 +360,6 @@ public class main extends javax.swing.JFrame {
         jTextArea2 = new javax.swing.JTextArea();
         jLabel39 = new javax.swing.JLabel();
         jTextField10 = new javax.swing.JTextField();
-        jLabel40 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
         jLabel41 = new javax.swing.JLabel();
         jSeparator5 = new javax.swing.JSeparator();
         jScrollPane8 = new javax.swing.JScrollPane();
@@ -421,8 +433,6 @@ public class main extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jLabel49 = new javax.swing.JLabel();
         jSeparator6 = new javax.swing.JSeparator();
-        jLabel50 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
         jLabel51 = new javax.swing.JLabel();
         jTextField13 = new javax.swing.JTextField();
         jLabel52 = new javax.swing.JLabel();
@@ -1996,37 +2006,40 @@ public class main extends javax.swing.JFrame {
 
         jTable22.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
-                "Raw Material", "Quantity"
+                "Raw Material", "Quantity", "Unit of Measure"
             }
         ));
         jScrollPane25.setViewportView(jTable22);
+        if (jTable22.getColumnModel().getColumnCount() > 0) {
+            jTable22.getColumnModel().getColumn(1).setResizable(false);
+        }
 
         jLabel12.setFont(new java.awt.Font("Abadi MT Condensed", 1, 24)); // NOI18N
         jLabel12.setText("Add New Raw Material");
@@ -2070,14 +2083,14 @@ public class main extends javax.swing.JFrame {
                 .addGap(35, 35, 35)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jButton26)
-                    .addComponent(jScrollPane25, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane25, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 156, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
                         .addComponent(jLabel12)
                         .addGap(96, 96, 96))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(107, 107, 107)
+                        .addGap(50, 50, 50)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jButton18)
                             .addGroup(jPanel2Layout.createSequentialGroup()
@@ -2504,7 +2517,7 @@ public class main extends javax.swing.JFrame {
                 {null, null, null, null, null, null, null}
             },
             new String [] {
-                "Date", "Customer Name", "Equipment", "Start Time", "End Time", "Number of Hours", "Total Amount"
+                "Date", "Customer Name", "Rent Type", "Start Time", "End Time", "Number of Hours", "Total Amount"
             }
         ));
         jScrollPane31.setViewportView(jTable28);
@@ -2513,13 +2526,51 @@ public class main extends javax.swing.JFrame {
 
         mainInventoryPanel.add(inventoryPanelThree, "inventoryPanelThree");
 
-        inventoryPanelFour.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         inventoryPanelFour.setOpaque(false);
         inventoryPanelFour.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        adjustRaw.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/raw.png"))); // NOI18N
+        adjustRaw.setBorder(null);
+        adjustRaw.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                adjustRawMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                adjustRawMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                adjustRawMouseExited(evt);
+            }
+        });
+        inventoryPanelFour.add(adjustRaw, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 5, 140, 30));
+
+        adjustFin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/fin.png"))); // NOI18N
+        adjustFin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                adjustFinMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                adjustFinMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                adjustFinMouseExited(evt);
+            }
+        });
+        inventoryPanelFour.add(adjustFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 5, 140, 30));
+
+        adjustPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        adjustPanel.setMinimumSize(new java.awt.Dimension(1002, 587));
+        adjustPanel.setOpaque(false);
+        adjustPanel.setPreferredSize(new java.awt.Dimension(1002, 587));
+        adjustPanel.setLayout(new java.awt.CardLayout());
+
+        adjustPanelOne.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        adjustPanelOne.setOpaque(false);
+        adjustPanelOne.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         jLabel103.setFont(new java.awt.Font("Abadi MT Condensed", 1, 24)); // NOI18N
         jLabel103.setText("Adjust Inventory");
-        inventoryPanelFour.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 160, -1));
+        adjustPanelOne.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 160, -1));
 
         jTable32.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -2580,46 +2631,46 @@ public class main extends javax.swing.JFrame {
         ));
         jScrollPane35.setViewportView(jTable32);
 
-        inventoryPanelFour.add(jScrollPane35, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 150, 550));
+        adjustPanelOne.add(jScrollPane35, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 150, 550));
 
         jButton23.setText("Add");
-        inventoryPanelFour.add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, -1, -1));
+        adjustPanelOne.add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, -1, -1));
 
         jButton25.setText("Save");
-        inventoryPanelFour.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, -1, -1));
+        adjustPanelOne.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, -1, -1));
 
         jLabel95.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel95.setText("Raw Material Name:");
-        inventoryPanelFour.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 60, -1, -1));
+        adjustPanelOne.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 60, -1, -1));
 
         jLabel96.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel96.setText("Date:");
-        inventoryPanelFour.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, -1, -1));
+        adjustPanelOne.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, -1, -1));
 
         jLabel104.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel104.setText("Adjustment No:");
-        inventoryPanelFour.add(jLabel104, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, -1, -1));
-        inventoryPanelFour.add(jXDatePicker5, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 30, 170, -1));
+        adjustPanelOne.add(jLabel104, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, -1, -1));
+        adjustPanelOne.add(jXDatePicker5, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 30, 170, -1));
 
         jTextField9.setText("Auto generated ito");
-        inventoryPanelFour.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 90, 170, -1));
+        adjustPanelOne.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 90, 170, -1));
 
         jLabel105.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel105.setText("Quantity:");
-        inventoryPanelFour.add(jLabel105, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 30, -1, -1));
+        adjustPanelOne.add(jLabel105, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 30, -1, -1));
 
         jLabel106.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel106.setText("Reason:");
-        inventoryPanelFour.add(jLabel106, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 90, -1, -1));
-        inventoryPanelFour.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 30, 170, -1));
+        adjustPanelOne.add(jLabel106, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 90, -1, -1));
+        adjustPanelOne.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 30, 170, -1));
 
         jComboBox13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        inventoryPanelFour.add(jComboBox13, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 90, 170, -1));
+        adjustPanelOne.add(jComboBox13, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 90, 170, -1));
 
         jLabel107.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel107.setText("Unit of Measure:");
-        inventoryPanelFour.add(jLabel107, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 60, -1, -1));
-        inventoryPanelFour.add(jTextField42, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 60, 170, -1));
+        adjustPanelOne.add(jLabel107, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 60, -1, -1));
+        adjustPanelOne.add(jTextField42, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 60, 170, -1));
 
         jTable33.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -2680,10 +2731,91 @@ public class main extends javax.swing.JFrame {
         ));
         jScrollPane36.setViewportView(jTable33);
 
-        inventoryPanelFour.add(jScrollPane36, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, 820, 450));
+        adjustPanelOne.add(jScrollPane36, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, 820, 450));
 
         jComboBox14.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        inventoryPanelFour.add(jComboBox14, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 60, 170, -1));
+        adjustPanelOne.add(jComboBox14, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 60, 170, -1));
+
+        adjustPanel.add(adjustPanelOne, "adjustPanelOne");
+
+        adjustPanelTwo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        adjustPanelTwo.setOpaque(false);
+        adjustPanelTwo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel34.setFont(new java.awt.Font("Abadi MT Condensed", 1, 24)); // NOI18N
+        jLabel34.setText("Adjust Finished Products");
+        adjustPanelTwo.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        jLabel115.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel115.setText("Date:");
+        adjustPanelTwo.add(jLabel115, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, -1, -1));
+
+        jLabel116.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel116.setText("Finished Product Name:");
+        adjustPanelTwo.add(jLabel116, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, -1, -1));
+        adjustPanelTwo.add(jXDatePicker6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, 170, -1));
+
+        jComboBox15.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        adjustPanelTwo.add(jComboBox15, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, 170, -1));
+
+        jLabel117.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel117.setText("Quantity:");
+        adjustPanelTwo.add(jLabel117, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 70, -1, -1));
+
+        jLabel118.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel118.setText("Reason:");
+        adjustPanelTwo.add(jLabel118, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, -1, -1));
+
+        jTextField43.setText("quantity na nasayang");
+        adjustPanelTwo.add(jTextField43, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 70, 170, -1));
+
+        jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        adjustPanelTwo.add(jComboBox16, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 100, 170, -1));
+
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "Date", "Adjustment Number", "Bill Of Materials", "Qty Used", "Unit of Measure", "Newly Adjusted Qty", "Reason"
+            }
+        ));
+        jScrollPane3.setViewportView(jTable3);
+
+        adjustPanelTwo.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 860, 410));
+
+        adjustPanel.add(adjustPanelTwo, "adjustPanelTwo");
+
+        inventoryPanelFour.add(adjustPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1024, 645));
 
         mainInventoryPanel.add(inventoryPanelFour, "inventoryPanelFour");
 
@@ -2921,10 +3053,7 @@ public class main extends javax.swing.JFrame {
         jLabel32.setText("Contact Person:");
 
         jLabel33.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
-        jLabel33.setText("Telephone No:");
-
-        jLabel34.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
-        jLabel34.setText("Mobile No:");
+        jLabel33.setText("Contact Number:");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -2949,20 +3078,18 @@ public class main extends javax.swing.JFrame {
                         .addGap(25, 25, 25)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel32)
-                            .addComponent(jLabel33)
-                            .addComponent(jLabel34))
+                            .addComponent(jLabel33))
                         .addGap(39, 39, 39)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTextField4)
-                            .addComponent(jTextField5)
-                            .addComponent(jTextField8)))
+                            .addComponent(jTextField5)))
                     .addComponent(jLabel31))
                 .addContainerGap(311, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
+                .addContainerGap(35, Short.MAX_VALUE)
                 .addComponent(jLabel11)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -2978,7 +3105,7 @@ public class main extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(28, 28, 28)
+                .addGap(32, 32, 32)
                 .addComponent(jLabel31)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -2988,11 +3115,7 @@ public class main extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel33))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel34)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(83, 83, 83))
+                .addGap(94, 94, 94))
         );
 
         jTabbedPane2.addTab("Supplier Information", jPanel3);
@@ -3061,39 +3184,39 @@ public class main extends javax.swing.JFrame {
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Purchase Number", "Purchase Date", "Status", "Total"
+                "Purchase Number", "Purchase Date", "Inventory Status", "Payment Status ", "Total"
             }
         ));
         jScrollPane2.setViewportView(jTable2);
@@ -3127,59 +3250,59 @@ public class main extends javax.swing.JFrame {
 
         jTable4.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Supplier Code", "Supplier Name", "Contact Person", "Address", "Telephone No.", "Mobile No."
+                "Supplier Code", "Supplier Name", "Contact Person", "Address", "Contact Number"
             }
         ));
         jScrollPane5.setViewportView(jTable4);
@@ -3235,18 +3358,18 @@ public class main extends javax.swing.JFrame {
         employeesPanelOne.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setText("Add");
-        employeesPanelOne.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, -1, -1));
+        employeesPanelOne.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 20, -1, -1));
 
         jButton2.setText("Save");
-        employeesPanelOne.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 10, -1, -1));
+        employeesPanelOne.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, -1, -1));
 
         jButton3.setText("Delete");
-        employeesPanelOne.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(375, 10, -1, -1));
+        employeesPanelOne.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 20, -1, -1));
 
         jLabel21.setFont(new java.awt.Font("Abadi MT Condensed", 1, 24)); // NOI18N
         jLabel21.setText("Basic");
-        employeesPanelOne.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 50, -1, -1));
-        employeesPanelOne.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, 460, 20));
+        employeesPanelOne.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, -1, -1));
+        employeesPanelOne.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, 460, 20));
 
         jTable5.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -3281,66 +3404,61 @@ public class main extends javax.swing.JFrame {
 
         jLabel27.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel27.setText("Employee Code:");
-        employeesPanelOne.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 95, -1, -1));
-        employeesPanelOne.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 90, 190, 30));
+        employeesPanelOne.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 140, -1, -1));
+        employeesPanelOne.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, 190, 30));
 
         jLabel28.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel28.setText("Employee Name:");
-        employeesPanelOne.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 135, -1, -1));
-        employeesPanelOne.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, 190, 30));
+        employeesPanelOne.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, -1, -1));
+        employeesPanelOne.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 170, 190, 30));
 
         jLabel35.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel35.setText("Position:");
-        employeesPanelOne.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 175, -1, -1));
+        employeesPanelOne.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 220, -1, -1));
 
         jLabel36.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel36.setText("Date Hired:");
-        employeesPanelOne.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 215, -1, -1));
+        employeesPanelOne.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, -1, -1));
 
         jLabel37.setFont(new java.awt.Font("Abadi MT Condensed", 1, 24)); // NOI18N
         jLabel37.setText("Contact");
         jLabel37.setToolTipText("");
-        employeesPanelOne.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 300, -1, -1));
-        employeesPanelOne.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 460, 10));
+        employeesPanelOne.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 340, -1, -1));
+        employeesPanelOne.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 370, 460, 10));
 
         jLabel38.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel38.setText("Address:");
-        employeesPanelOne.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, -1, -1));
+        employeesPanelOne.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, -1, -1));
 
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
         jScrollPane7.setViewportView(jTextArea2);
 
-        employeesPanelOne.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 340, 350, 70));
+        employeesPanelOne.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 380, 350, 70));
 
         jLabel39.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
-        jLabel39.setText("Telephone No.:");
-        employeesPanelOne.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 430, -1, -1));
-        employeesPanelOne.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 420, 240, 30));
-
-        jLabel40.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
-        jLabel40.setText("Mobile No.:");
-        employeesPanelOne.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 470, -1, -1));
-        employeesPanelOne.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 460, 240, 30));
+        jLabel39.setText("Contact Number:");
+        employeesPanelOne.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 470, -1, -1));
+        employeesPanelOne.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 460, 240, 30));
 
         jLabel41.setFont(new java.awt.Font("Abadi MT Condensed", 1, 24)); // NOI18N
         jLabel41.setText("Picture");
-        employeesPanelOne.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 50, -1, -1));
-        employeesPanelOne.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 80, 280, 10));
+        employeesPanelOne.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 90, -1, -1));
+        employeesPanelOne.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 120, 280, 10));
 
         jScrollPane8.setViewportView(jTextPane1);
 
-        employeesPanelOne.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 92, 220, 160));
+        employeesPanelOne.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 130, 220, 160));
 
         jButton4.setText("Browse");
-        employeesPanelOne.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 260, -1, -1));
+        employeesPanelOne.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 300, -1, -1));
 
         jButton5.setText("Cancel");
-        employeesPanelOne.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 260, -1, -1));
+        employeesPanelOne.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 300, -1, -1));
 
         jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        employeesPanelOne.add(jComboBox11, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 170, 190, 30));
-        employeesPanelOne.add(jXDatePicker4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 210, 190, 30));
+        employeesPanelOne.add(jComboBox11, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 210, 190, 30));
+        employeesPanelOne.add(jXDatePicker4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 250, 190, 30));
 
         jLabel110.setFont(new java.awt.Font("Abadi MT Condensed", 1, 24)); // NOI18N
         jLabel110.setText("New Employee");
@@ -3859,61 +3977,56 @@ public class main extends javax.swing.JFrame {
         newAccountPanel.add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 230, 350));
 
         jButton7.setText("Add");
-        newAccountPanel.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
+        newAccountPanel.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, -1, -1));
 
         jButton8.setText("Save");
-        newAccountPanel.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 10, -1, -1));
+        newAccountPanel.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 20, -1, -1));
 
         jLabel49.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel49.setText("Basic");
-        newAccountPanel.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 50, -1, -1));
-        newAccountPanel.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 620, 10));
-
-        jLabel50.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
-        jLabel50.setText("Account Code:");
-        newAccountPanel.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 95, -1, -1));
-        newAccountPanel.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 90, 330, 30));
+        newAccountPanel.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 80, -1, -1));
+        newAccountPanel.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, 620, 10));
 
         jLabel51.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel51.setText("Username:");
-        newAccountPanel.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 135, -1, -1));
-        newAccountPanel.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 130, 330, 30));
+        newAccountPanel.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 130, -1, -1));
+        newAccountPanel.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, 330, 30));
 
         jLabel52.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel52.setText("Password:");
-        newAccountPanel.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 175, -1, -1));
+        newAccountPanel.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, -1, -1));
 
         jPasswordField1.setText("jPasswordField1");
-        newAccountPanel.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, 330, 30));
+        newAccountPanel.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 170, 330, 30));
 
         jLabel53.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel53.setText("Confirm Password:");
-        newAccountPanel.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 215, -1, -1));
+        newAccountPanel.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 210, -1, -1));
 
         jPasswordField2.setText("jPasswordField2");
-        newAccountPanel.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 210, 330, 30));
+        newAccountPanel.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 210, 330, 30));
 
         jLabel54.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel54.setText("Contact");
-        newAccountPanel.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 280, -1, -1));
-        newAccountPanel.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 310, 620, 10));
+        newAccountPanel.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, -1, -1));
+        newAccountPanel.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, 620, 10));
 
         jLabel55.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel55.setText("Employee Name:");
-        newAccountPanel.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 370, -1, -1));
-        newAccountPanel.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 360, 330, 30));
+        newAccountPanel.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 400, -1, -1));
+        newAccountPanel.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 390, 330, 30));
 
         jLabel56.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel56.setText("Position:");
-        newAccountPanel.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 410, -1, -1));
+        newAccountPanel.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 440, -1, -1));
 
         jLabel57.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel57.setText("Employee No.:");
-        newAccountPanel.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 325, -1, -1));
-        newAccountPanel.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 320, 330, 30));
+        newAccountPanel.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 350, -1, -1));
+        newAccountPanel.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 350, 330, 30));
 
         jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        newAccountPanel.add(jComboBox12, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 400, 330, 30));
+        newAccountPanel.add(jComboBox12, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 430, 330, 30));
 
         jLabel112.setFont(new java.awt.Font("Abadi MT Condensed", 1, 24)); // NOI18N
         jLabel112.setText("New Account");
@@ -4865,6 +4978,36 @@ public class main extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField18ActionPerformed
 
+    private void adjustRawMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adjustRawMouseClicked
+        CardLayout admin = (CardLayout) adjustPanel.getLayout();
+        admin.show(adjustPanel, "adjustPanelOne");
+    }//GEN-LAST:event_adjustRawMouseClicked
+
+    private void adjustFinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adjustFinMouseClicked
+        CardLayout admin = (CardLayout) adjustPanel.getLayout();
+        admin.show(adjustPanel, "adjustPanelTwo");
+    }//GEN-LAST:event_adjustFinMouseClicked
+
+    private void adjustRawMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adjustRawMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/rawhvr.png"));
+        adjustRaw.setIcon(ico);
+    }//GEN-LAST:event_adjustRawMouseEntered
+
+    private void adjustRawMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adjustRawMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/raw.png"));
+        adjustRaw.setIcon(ico);
+    }//GEN-LAST:event_adjustRawMouseExited
+
+    private void adjustFinMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adjustFinMouseEntered
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/finhvr.png"));
+        adjustFin.setIcon(ico);
+    }//GEN-LAST:event_adjustFinMouseEntered
+
+    private void adjustFinMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adjustFinMouseExited
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/fin.png"));
+        adjustFin.setIcon(ico);
+    }//GEN-LAST:event_adjustFinMouseExited
+
     /**
      * @param args the command line arguments
      */
@@ -4904,6 +5047,11 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JButton accountList;
     private javax.swing.JPanel accountPanel;
     private javax.swing.JButton accounts;
+    private javax.swing.JButton adjustFin;
+    private javax.swing.JPanel adjustPanel;
+    private javax.swing.JPanel adjustPanelOne;
+    private javax.swing.JPanel adjustPanelTwo;
+    private javax.swing.JButton adjustRaw;
     private javax.swing.JButton adjustment;
     private javax.swing.JButton archery;
     private javax.swing.JLabel back1;
@@ -4971,6 +5119,8 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox12;
     private javax.swing.JComboBox<String> jComboBox13;
     private javax.swing.JComboBox<String> jComboBox14;
+    private javax.swing.JComboBox<String> jComboBox15;
+    private javax.swing.JComboBox<String> jComboBox16;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JComboBox<String> jComboBox4;
@@ -4997,6 +5147,10 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel112;
     private javax.swing.JLabel jLabel113;
     private javax.swing.JLabel jLabel114;
+    private javax.swing.JLabel jLabel115;
+    private javax.swing.JLabel jLabel116;
+    private javax.swing.JLabel jLabel117;
+    private javax.swing.JLabel jLabel118;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
@@ -5028,7 +5182,6 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
@@ -5039,7 +5192,6 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel53;
@@ -5122,6 +5274,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane27;
     private javax.swing.JScrollPane jScrollPane28;
     private javax.swing.JScrollPane jScrollPane29;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane30;
     private javax.swing.JScrollPane jScrollPane31;
     private javax.swing.JScrollPane jScrollPane32;
@@ -5166,6 +5319,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JTable jTable27;
     private javax.swing.JTable jTable28;
     private javax.swing.JTable jTable29;
+    private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable30;
     private javax.swing.JTable jTable31;
     private javax.swing.JTable jTable32;
@@ -5180,8 +5334,6 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField15;
@@ -5215,10 +5367,10 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField40;
     private javax.swing.JTextField jTextField41;
     private javax.swing.JTextField jTextField42;
+    private javax.swing.JTextField jTextField43;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     private javax.swing.JTextPane jTextPane1;
     private org.jdesktop.swingx.JXDatePicker jXDatePicker1;
@@ -5226,6 +5378,7 @@ public class main extends javax.swing.JFrame {
     private org.jdesktop.swingx.JXDatePicker jXDatePicker3;
     private org.jdesktop.swingx.JXDatePicker jXDatePicker4;
     private org.jdesktop.swingx.JXDatePicker jXDatePicker5;
+    private org.jdesktop.swingx.JXDatePicker jXDatePicker6;
     private javax.swing.JLabel label;
     private javax.swing.JButton ledger;
     private javax.swing.JPanel listAccountPanel;
