@@ -6,7 +6,7 @@
 import java.awt.CardLayout;
 import javax.swing.ImageIcon;
 import javax.swing.UIManager;
-
+import javax.swing.DefaultCellEditor;
 /**
  *
  * @author Admin
@@ -29,6 +29,8 @@ public class main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox2 = new javax.swing.JComboBox<>();
         mainPanel = new javax.swing.JPanel();
         welcomePanel = new javax.swing.JPanel();
         label = new javax.swing.JLabel();
@@ -45,7 +47,7 @@ public class main extends javax.swing.JFrame {
         prchLst = new javax.swing.JButton();
         mainPurchasingPanel = new javax.swing.JPanel();
         purchasePanelOne = new javax.swing.JPanel();
-        selectSupplier = new javax.swing.JButton();
+        newPurchase = new javax.swing.JButton();
         receivedStock = new javax.swing.JButton();
         returnsStock = new javax.swing.JButton();
         supplierPanel = new javax.swing.JPanel();
@@ -55,14 +57,9 @@ public class main extends javax.swing.JFrame {
         jLabel58 = new javax.swing.JLabel();
         jTextField17 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jLabel59 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
         jLabel60 = new javax.swing.JLabel();
         jTextField18 = new javax.swing.JTextField();
         jLabel61 = new javax.swing.JLabel();
-        jLabel62 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox<>();
         jScrollPane14 = new javax.swing.JScrollPane();
         jTable11 = new javax.swing.JTable();
         jLabel63 = new javax.swing.JLabel();
@@ -71,12 +68,15 @@ public class main extends javax.swing.JFrame {
         jTextField20 = new javax.swing.JTextField();
         jLabel65 = new javax.swing.JLabel();
         jTextField21 = new javax.swing.JTextField();
-        jButton6 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jXDatePicker1 = new org.jdesktop.swingx.JXDatePicker();
         jButton21 = new javax.swing.JButton();
         jButton22 = new javax.swing.JButton();
         jLabel97 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jButton33 = new javax.swing.JButton();
+        jTextField11 = new javax.swing.JTextField();
+        jButton34 = new javax.swing.JButton();
         supplierPanelTwo = new javax.swing.JPanel();
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
@@ -85,15 +85,10 @@ public class main extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jTextField22 = new javax.swing.JTextField();
         jLabel66 = new javax.swing.JLabel();
-        jLabel67 = new javax.swing.JLabel();
-        jComboBox4 = new javax.swing.JComboBox<>();
-        jComboBox5 = new javax.swing.JComboBox<>();
         jLabel68 = new javax.swing.JLabel();
         jTextField23 = new javax.swing.JTextField();
         jLabel69 = new javax.swing.JLabel();
         jXDatePicker2 = new org.jdesktop.swingx.JXDatePicker();
-        jLabel70 = new javax.swing.JLabel();
-        jComboBox6 = new javax.swing.JComboBox<>();
         jSeparator9 = new javax.swing.JSeparator();
         jScrollPane16 = new javax.swing.JScrollPane();
         jTable13 = new javax.swing.JTable();
@@ -102,29 +97,27 @@ public class main extends javax.swing.JFrame {
         jLabel72 = new javax.swing.JLabel();
         jTextField25 = new javax.swing.JTextField();
         jLabel98 = new javax.swing.JLabel();
+        jTextField12 = new javax.swing.JTextField();
+        jButton35 = new javax.swing.JButton();
         supplierPanelThree = new javax.swing.JPanel();
-        jButton12 = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
         jScrollPane17 = new javax.swing.JScrollPane();
         jTable14 = new javax.swing.JTable();
         jLabel73 = new javax.swing.JLabel();
         jTextField26 = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jLabel74 = new javax.swing.JLabel();
-        jComboBox7 = new javax.swing.JComboBox<>();
-        jComboBox8 = new javax.swing.JComboBox<>();
         jLabel75 = new javax.swing.JLabel();
         jTextField27 = new javax.swing.JTextField();
         jLabel76 = new javax.swing.JLabel();
         jXDatePicker3 = new org.jdesktop.swingx.JXDatePicker();
-        jLabel77 = new javax.swing.JLabel();
-        jComboBox9 = new javax.swing.JComboBox<>();
         jScrollPane18 = new javax.swing.JScrollPane();
         jTable15 = new javax.swing.JTable();
         jSeparator10 = new javax.swing.JSeparator();
         jLabel78 = new javax.swing.JLabel();
         jTextField28 = new javax.swing.JTextField();
         jLabel99 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        jTextField8 = new javax.swing.JTextField();
         purchasePanelTwo = new javax.swing.JPanel();
         purchasedOrder = new javax.swing.JButton();
         unreceivedOrder = new javax.swing.JButton();
@@ -161,6 +154,10 @@ public class main extends javax.swing.JFrame {
         jScrollPane19 = new javax.swing.JScrollPane();
         jTable16 = new javax.swing.JTable();
         jLabel100 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        jLabel74 = new javax.swing.JLabel();
+        jScrollPane38 = new javax.swing.JScrollPane();
+        jTable36 = new javax.swing.JTable();
         stocksPanelTwo = new javax.swing.JPanel();
         jScrollPane20 = new javax.swing.JScrollPane();
         jTable17 = new javax.swing.JTable();
@@ -223,6 +220,31 @@ public class main extends javax.swing.JFrame {
         jTextField40 = new javax.swing.JTextField();
         jButton18 = new javax.swing.JButton();
         jButton26 = new javax.swing.JButton();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel40 = new javax.swing.JLabel();
+        jTextField44 = new javax.swing.JTextField();
+        jLabel50 = new javax.swing.JLabel();
+        jXDatePicker7 = new org.jdesktop.swingx.JXDatePicker();
+        jLabel59 = new javax.swing.JLabel();
+        jTextField45 = new javax.swing.JTextField();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTable35 = new javax.swing.JTable();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jTextField46 = new javax.swing.JTextField();
+        jLabel119 = new javax.swing.JLabel();
+        jTextField47 = new javax.swing.JTextField();
+        jLabel120 = new javax.swing.JLabel();
+        jTextField48 = new javax.swing.JTextField();
+        jLabel121 = new javax.swing.JLabel();
+        jTextField49 = new javax.swing.JTextField();
+        jLabel122 = new javax.swing.JLabel();
+        jTextField50 = new javax.swing.JTextField();
+        jLabel123 = new javax.swing.JLabel();
+        jTextField51 = new javax.swing.JTextField();
+        jTextField52 = new javax.swing.JTextField();
+        jLabel124 = new javax.swing.JLabel();
+        jButton36 = new javax.swing.JButton();
         jLabel102 = new javax.swing.JLabel();
         jButton24 = new javax.swing.JButton();
         jButton27 = new javax.swing.JButton();
@@ -456,6 +478,10 @@ public class main extends javax.swing.JFrame {
         accountList = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Receieved", "Unreceived" }));
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Basic", "Compound" }));
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
@@ -599,19 +625,19 @@ public class main extends javax.swing.JFrame {
         purchasePanelOne.setPreferredSize(new java.awt.Dimension(1024, 645));
         purchasePanelOne.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        selectSupplier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/ss.png"))); // NOI18N
-        selectSupplier.addMouseListener(new java.awt.event.MouseAdapter() {
+        newPurchase.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/ss.png"))); // NOI18N
+        newPurchase.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                selectSupplierMouseClicked(evt);
+                newPurchaseMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                selectSupplierMouseEntered(evt);
+                newPurchaseMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                selectSupplierMouseExited(evt);
+                newPurchaseMouseExited(evt);
             }
         });
-        purchasePanelOne.add(selectSupplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 5, 140, 30));
+        purchasePanelOne.add(newPurchase, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 5, 140, 30));
 
         receivedStock.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/rs.png"))); // NOI18N
         receivedStock.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -650,113 +676,91 @@ public class main extends javax.swing.JFrame {
 
         jTable10.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null}
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
-                "Purchase Number"
+                "Purchase No", "Payment Status", "Purchase Status"
             }
         ));
         jTable10.setMaximumSize(new java.awt.Dimension(2147483647, 800));
         jTable10.setMinimumSize(new java.awt.Dimension(15, 800));
         jScrollPane13.setViewportView(jTable10);
 
-        supplierPanelOne.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 220, 530));
+        supplierPanelOne.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 20, 300, 560));
 
         jLabel58.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel58.setText("Supplier Code:");
-        supplierPanelOne.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, -1, -1));
-        supplierPanelOne.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 40, 220, 30));
+        supplierPanelOne.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
+        supplierPanelOne.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, 180, 30));
 
         jLabel5.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel5.setText("Supplier Name:");
-        supplierPanelOne.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, -1, -1));
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
-            }
-        });
-        supplierPanelOne.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 75, 220, 30));
-
-        jLabel59.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
-        jLabel59.setText("Establishment Name:");
-        supplierPanelOne.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, -1, -1));
-
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        supplierPanelOne.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 110, 220, 30));
+        supplierPanelOne.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, -1));
 
         jLabel60.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel60.setText("Purchase No:");
-        supplierPanelOne.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 50, -1, -1));
+        supplierPanelOne.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 60, -1, -1));
 
         jTextField18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField18ActionPerformed(evt);
             }
         });
-        supplierPanelOne.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 40, 150, 30));
+        supplierPanelOne.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 50, 150, 30));
 
         jLabel61.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel61.setText("Date:");
-        supplierPanelOne.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 80, -1, -1));
-
-        jLabel62.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
-        jLabel62.setText("Status:");
-        supplierPanelOne.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 110, -1, -1));
-
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        supplierPanelOne.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 110, 150, 30));
+        supplierPanelOne.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, -1, -1));
 
         jTable11.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -786,40 +790,56 @@ public class main extends javax.swing.JFrame {
             }
         ));
         jScrollPane14.setViewportView(jTable11);
+        if (jTable11.getColumnModel().getColumnCount() > 0) {
+            jTable11.getColumnModel().getColumn(2).setPreferredWidth(50);
+            jTable11.getColumnModel().getColumn(4).setPreferredWidth(40);
+        }
 
-        supplierPanelOne.add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 160, 770, 280));
+        supplierPanelOne.add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 680, 280));
 
         jLabel63.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel63.setText("Total:");
-        supplierPanelOne.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 450, -1, -1));
-        supplierPanelOne.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 450, 110, 20));
+        supplierPanelOne.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 490, -1, 20));
+        supplierPanelOne.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 490, 110, 20));
 
         jLabel64.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel64.setText("Amount Paid: ");
-        supplierPanelOne.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 480, 90, -1));
-        supplierPanelOne.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 480, 110, 20));
+        supplierPanelOne.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 520, 90, 20));
+        supplierPanelOne.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 520, 110, 20));
 
         jLabel65.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel65.setText("Balance:");
-        supplierPanelOne.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 510, -1, -1));
-        supplierPanelOne.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 510, 110, 20));
-
-        jButton6.setText("Fulfilled");
-        supplierPanelOne.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 550, -1, -1));
+        supplierPanelOne.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 550, -1, 20));
+        supplierPanelOne.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 550, 110, 20));
 
         jButton9.setText("Pay");
-        supplierPanelOne.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 550, -1, -1));
-        supplierPanelOne.add(jXDatePicker1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 75, 150, 30));
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        supplierPanelOne.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 530, 80, 30));
+        supplierPanelOne.add(jXDatePicker1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 85, 150, 30));
 
         jButton21.setText("Add");
-        supplierPanelOne.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
+        supplierPanelOne.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
 
         jButton22.setText("Save");
-        supplierPanelOne.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, -1, -1));
+        supplierPanelOne.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, -1, -1));
 
         jLabel97.setFont(new java.awt.Font("Abadi MT Condensed", 1, 24)); // NOI18N
         jLabel97.setText("New Purchase Order");
         supplierPanelOne.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        supplierPanelOne.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 0, 10, 600));
+
+        jButton33.setText("Print");
+        supplierPanelOne.add(jButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, -1, -1));
+        supplierPanelOne.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 180, 30));
+
+        jButton34.setText("Forward to Supplier");
+        supplierPanelOne.add(jButton34, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 493, 130, 30));
 
         supplierPanel.add(supplierPanelOne, "supplierPanelOne");
 
@@ -827,67 +847,72 @@ public class main extends javax.swing.JFrame {
         supplierPanelTwo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         supplierPanelTwo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton10.setText("Add");
-        supplierPanelTwo.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
+        jButton10.setText("Save");
+        supplierPanelTwo.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, -1, -1));
 
-        jButton11.setText("Save");
-        supplierPanelTwo.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 10, -1, -1));
+        jButton11.setText("Print");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+        supplierPanelTwo.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 120, -1, -1));
 
         jTable12.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null}
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
             },
             new String [] {
-                "Purchase Number"
+                "Purchase Number", "Receive Status"
             }
         ));
         jScrollPane15.setViewportView(jTable12);
@@ -896,39 +921,22 @@ public class main extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel6.setText("Supplier Code:");
-        supplierPanelTwo.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 45, -1, -1));
+        supplierPanelTwo.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, -1, -1));
         supplierPanelTwo.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 40, 190, 30));
 
         jLabel66.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel66.setText("Supplier Name:");
-        supplierPanelTwo.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 85, -1, -1));
-
-        jLabel67.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
-        jLabel67.setText("Establishment Name:");
-        supplierPanelTwo.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 125, -1, -1));
-
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        supplierPanelTwo.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, 190, 30));
-
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        supplierPanelTwo.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 120, 190, 30));
+        supplierPanelTwo.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, -1, -1));
 
         jLabel68.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel68.setText("Purchase No:");
-        supplierPanelTwo.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 45, -1, -1));
+        supplierPanelTwo.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, -1, -1));
         supplierPanelTwo.add(jTextField23, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 40, 150, 30));
 
         jLabel69.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel69.setText("Date:");
-        supplierPanelTwo.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 85, -1, -1));
+        supplierPanelTwo.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 80, -1, -1));
         supplierPanelTwo.add(jXDatePicker2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 80, 150, 30));
-
-        jLabel70.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
-        jLabel70.setText("Status:");
-        supplierPanelTwo.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 125, -1, -1));
-
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        supplierPanelTwo.add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 120, 150, 30));
         supplierPanelTwo.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 160, 770, 10));
 
         jTable13.setModel(new javax.swing.table.DefaultTableModel(
@@ -985,7 +993,7 @@ public class main extends javax.swing.JFrame {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Raw Material Code", "Raw Material Name", "Quantity Received", "Quantity Pending", "Unit of Measure", "Date Received"
+                "Raw Material Code", "Raw Material Name", "Unit of Measure", "Quantity Received", "Date Received", "Quantity Pending"
             }
         ));
         jScrollPane16.setViewportView(jTable13);
@@ -1005,6 +1013,10 @@ public class main extends javax.swing.JFrame {
         jLabel98.setFont(new java.awt.Font("Abadi MT Condensed", 1, 24)); // NOI18N
         jLabel98.setText("Receive Stock");
         supplierPanelTwo.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+        supplierPanelTwo.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, 190, 30));
+
+        jButton35.setText("Receive All");
+        supplierPanelTwo.add(jButton35, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 120, -1, -1));
 
         supplierPanel.add(supplierPanelTwo, "supplierPanelTwo");
 
@@ -1012,11 +1024,8 @@ public class main extends javax.swing.JFrame {
         supplierPanelThree.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         supplierPanelThree.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton12.setText("Add");
-        supplierPanelThree.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
-
         jButton13.setText("Save");
-        supplierPanelThree.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 10, -1, -1));
+        supplierPanelThree.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, -1, -1));
 
         jTable14.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1081,39 +1090,22 @@ public class main extends javax.swing.JFrame {
 
         jLabel73.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel73.setText("Supplier Code:");
-        supplierPanelThree.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 45, -1, -1));
-        supplierPanelThree.add(jTextField26, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 40, 190, 30));
+        supplierPanelThree.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, -1, -1));
+        supplierPanelThree.add(jTextField26, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 50, 190, 30));
 
         jLabel7.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel7.setText("Supplier Name:");
-        supplierPanelThree.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 85, -1, -1));
-
-        jLabel74.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
-        jLabel74.setText("Establishment Name:");
-        supplierPanelThree.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 125, -1, -1));
-
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        supplierPanelThree.add(jComboBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 120, 190, 30));
-
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        supplierPanelThree.add(jComboBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, 190, 30));
+        supplierPanelThree.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 90, -1, -1));
 
         jLabel75.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel75.setText("Purchase No:");
-        supplierPanelThree.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 45, -1, -1));
-        supplierPanelThree.add(jTextField27, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 40, 150, 30));
+        supplierPanelThree.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 50, -1, -1));
+        supplierPanelThree.add(jTextField27, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 50, 150, 30));
 
         jLabel76.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel76.setText("Date:");
-        supplierPanelThree.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 85, -1, -1));
-        supplierPanelThree.add(jXDatePicker3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 80, 150, 30));
-
-        jLabel77.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
-        jLabel77.setText("Status:");
-        supplierPanelThree.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 125, -1, -1));
-
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        supplierPanelThree.add(jComboBox9, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 120, 150, 30));
+        supplierPanelThree.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 90, -1, -1));
+        supplierPanelThree.add(jXDatePicker3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 90, 150, 30));
 
         jTable15.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1185,6 +1177,10 @@ public class main extends javax.swing.JFrame {
         jLabel99.setFont(new java.awt.Font("Abadi MT Condensed", 1, 24)); // NOI18N
         jLabel99.setText("Returns Stock");
         supplierPanelThree.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        jButton6.setText("Print");
+        supplierPanelThree.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 130, -1, -1));
+        supplierPanelThree.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, 190, 30));
 
         supplierPanel.add(supplierPanelThree, "supplierPanelThree");
 
@@ -1290,7 +1286,7 @@ public class main extends javax.swing.JFrame {
         ));
         jScrollPane32.setViewportView(jTable29);
 
-        subPurchaseListPanelOne.add(jScrollPane32, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 900, 490));
+        subPurchaseListPanelOne.add(jScrollPane32, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 900, 490));
 
         purchaseListPanel.add(subPurchaseListPanelOne, "subPurchaseListPanelOne");
 
@@ -1508,6 +1504,11 @@ public class main extends javax.swing.JFrame {
         inventoryPanelOne.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         currentStock.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/cs.png"))); // NOI18N
+        currentStock.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                currentStockFocusGained(evt);
+            }
+        });
         currentStock.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 currentStockMouseClicked(evt);
@@ -1518,10 +1519,23 @@ public class main extends javax.swing.JFrame {
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 currentStockMouseExited(evt);
             }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                currentStockMousePressed(evt);
+            }
+        });
+        currentStock.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                currentStockActionPerformed(evt);
+            }
         });
         inventoryPanelOne.add(currentStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 5, 140, 30));
 
         reOrderPoint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/ros.png"))); // NOI18N
+        reOrderPoint.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                reOrderPointFocusGained(evt);
+            }
+        });
         reOrderPoint.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 reOrderPointMouseClicked(evt);
@@ -1586,16 +1600,67 @@ public class main extends javax.swing.JFrame {
                 {null, null, null, null, null}
             },
             new String [] {
-                "Raw Material Code", "Raw Material Name", "Supplier", "Current Quantity", "Unit of Measure"
+                "Code", "Name", "Supplier", "Current Qty", "Unit of Measure"
             }
         ));
         jScrollPane19.setViewportView(jTable16);
+        if (jTable16.getColumnModel().getColumnCount() > 0) {
+            jTable16.getColumnModel().getColumn(0).setPreferredWidth(50);
+            jTable16.getColumnModel().getColumn(3).setPreferredWidth(50);
+            jTable16.getColumnModel().getColumn(4).setPreferredWidth(65);
+        }
 
-        stocksPanelOne.add(jScrollPane19, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, 800, -1));
+        stocksPanelOne.add(jScrollPane19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 430, -1));
 
         jLabel100.setFont(new java.awt.Font("Abadi MT Condensed", 1, 24)); // NOI18N
-        jLabel100.setText("Current Stock");
-        stocksPanelOne.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 15, -1, -1));
+        jLabel100.setText("Basic Raw Material");
+        stocksPanelOne.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
+
+        jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        stocksPanelOne.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 0, 10, 600));
+
+        jLabel74.setFont(new java.awt.Font("Abadi MT Condensed", 1, 24)); // NOI18N
+        jLabel74.setText("Compound Raw Material");
+        stocksPanelOne.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 20, -1, -1));
+
+        jTable36.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "Code", "Name", "Current Qty", "Unit of Measure", "Date Created", "Days Lasted"
+            }
+        ));
+        jScrollPane38.setViewportView(jTable36);
+        if (jTable36.getColumnModel().getColumnCount() > 0) {
+            jTable36.getColumnModel().getColumn(2).setPreferredWidth(55);
+        }
+
+        stocksPanelOne.add(jScrollPane38, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 70, 510, -1));
 
         stocksPanel.add(stocksPanelOne, "stocksPanelOne");
 
@@ -1742,7 +1807,7 @@ public class main extends javax.swing.JFrame {
                 {null, null, null, null, null, null, null}
             },
             new String [] {
-                "Date", "Reference", "Quantity Purchased", "Quantity Used/Sold", "Returns", "Spoilage", "Quantity Left"
+                "Date", "Reference", "Quantity Purchased", "Quantity Used/Sold", "Qty Adjusted", "Reason", "Quantity Left"
             }
         ));
         jScrollPane23.setViewportView(jTable20);
@@ -2006,43 +2071,44 @@ public class main extends javax.swing.JFrame {
 
         jTable22.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "Raw Material", "Quantity", "Unit of Measure"
+                "Raw Material", "Quantity", "Unit of Measure", "Type"
             }
         ));
         jScrollPane25.setViewportView(jTable22);
         if (jTable22.getColumnModel().getColumnCount() > 0) {
             jTable22.getColumnModel().getColumn(1).setResizable(false);
+            jTable22.getColumnModel().getColumn(3).setCellEditor(new DefaultCellEditor(jComboBox2));
         }
 
         jLabel12.setFont(new java.awt.Font("Abadi MT Condensed", 1, 24)); // NOI18N
-        jLabel12.setText("Add New Raw Material");
+        jLabel12.setText("New Basic Raw Material");
 
         jLabel19.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
         jLabel19.setText("Raw Material Name:");
@@ -2080,28 +2146,26 @@ public class main extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton26)
-                    .addComponent(jScrollPane25, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
-                        .addComponent(jLabel12)
-                        .addGap(96, 96, 96))
+                        .addGap(288, 288, 288)
+                        .addComponent(jButton26))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane25, javax.swing.GroupLayout.PREFERRED_SIZE, 372, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton18)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel19)
-                                    .addComponent(jLabel86)
                                     .addComponent(jLabel87)
                                     .addComponent(jLabel88)
                                     .addComponent(jLabel89)
                                     .addComponent(jLabel90)
-                                    .addComponent(jLabel91))
+                                    .addComponent(jLabel91)
+                                    .addComponent(jLabel86))
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jTextField34)
@@ -2110,8 +2174,14 @@ public class main extends javax.swing.JFrame {
                                     .addComponent(jTextField37)
                                     .addComponent(jTextField38)
                                     .addComponent(jTextField39)
-                                    .addComponent(jTextField40, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE))))
-                        .addContainerGap(59, Short.MAX_VALUE))))
+                                    .addComponent(jTextField40, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel12)
+                                .addGap(36, 36, 36))))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(61, 61, 61)
+                        .addComponent(jButton18)))
+                .addContainerGap(59, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2119,12 +2189,12 @@ public class main extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(38, 38, 38)
+                        .addComponent(jLabel12)
+                        .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addComponent(jLabel12)
-                                        .addGap(18, 18, 18)
                                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(jLabel19)
                                             .addComponent(jTextField34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -2150,7 +2220,7 @@ public class main extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTextField40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel89))
-                        .addGap(36, 36, 36)
+                        .addGap(85, 85, 85)
                         .addComponent(jButton18))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(25, 25, 25)
@@ -2161,6 +2231,213 @@ public class main extends javax.swing.JFrame {
         );
 
         jTabbedPane1.addTab("Bill of Materials", jPanel2);
+
+        jPanel6.setOpaque(false);
+
+        jLabel40.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel40.setText("Name of Compound Raw Material:");
+
+        jLabel50.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel50.setText("Date Created:");
+
+        jXDatePicker7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jXDatePicker7ActionPerformed(evt);
+            }
+        });
+
+        jLabel59.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel59.setText("Days Lasted:");
+
+        jTable35.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "Basic Raw Material", "Quantity", "Unit of Measure"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                true, true, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane4.setViewportView(jTable35);
+        if (jTable35.getColumnModel().getColumnCount() > 0) {
+            jTable35.getColumnModel().getColumn(1).setPreferredWidth(50);
+        }
+
+        jLabel62.setFont(new java.awt.Font("Abadi MT Condensed", 1, 24)); // NOI18N
+        jLabel62.setText("New Basic Raw Material");
+
+        jLabel67.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel67.setText("Raw Material Name:");
+
+        jLabel119.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel119.setText("Raw Material Code:");
+
+        jLabel120.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel120.setText("Supplier Name:");
+
+        jLabel121.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel121.setText("Quantity:");
+
+        jTextField49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField49ActionPerformed(evt);
+            }
+        });
+
+        jLabel122.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel122.setText("Unit of Measure:");
+
+        jLabel123.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel123.setText("Reorder Point:");
+
+        jLabel124.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel124.setText("Reorder Quantity:");
+
+        jButton36.setText("Add");
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(jLabel40)
+                        .addGap(18, 18, 18)
+                        .addComponent(jTextField44, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 372, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(53, 53, 53)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel50)
+                            .addComponent(jLabel59))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField45)
+                            .addComponent(jXDatePicker7, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel67)
+                                    .addComponent(jLabel119)
+                                    .addComponent(jLabel120)
+                                    .addComponent(jLabel123)
+                                    .addComponent(jLabel124)
+                                    .addComponent(jLabel122)
+                                    .addComponent(jLabel121))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jTextField46)
+                                    .addComponent(jTextField47)
+                                    .addComponent(jTextField48)
+                                    .addComponent(jTextField50)
+                                    .addComponent(jTextField51)
+                                    .addComponent(jTextField49)
+                                    .addComponent(jTextField52, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(jLabel62)
+                                .addGap(36, 36, 36))
+                            .addComponent(jButton36))
+                        .addGap(39, 39, 39))))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel50)
+                            .addComponent(jXDatePicker7, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel59)
+                            .addComponent(jTextField45, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel40)
+                            .addComponent(jTextField44, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel62)
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jLabel67)
+                                            .addComponent(jTextField46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jLabel119)
+                                            .addComponent(jTextField47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(jLabel120)
+                                            .addComponent(jTextField48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jLabel121))
+                                    .addComponent(jTextField49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(11, 11, 11)
+                                .addComponent(jLabel122))
+                            .addComponent(jTextField50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jTextField51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel123))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel124))
+                        .addGap(33, 33, 33)
+                        .addComponent(jButton36)
+                        .addGap(64, 64, 64))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 362, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(40, Short.MAX_VALUE))))
+        );
+
+        jTabbedPane1.addTab("Bill of Compound Raw Materials", jPanel6);
 
         productsPanelOne.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 60, 770, 520));
 
@@ -4158,8 +4435,33 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_purchasingMouseExited
 
     private void purchasingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_purchasingMouseClicked
-        CardLayout admin = (CardLayout) mainPanel.getLayout();
-        admin.show(mainPanel, "purchasingPanel");
+        CardLayout adminPurchasing = (CardLayout) mainPanel.getLayout();
+        adminPurchasing.show(mainPanel, "purchasingPanel");
+        
+        
+        CardLayout adminMainPurchasing = (CardLayout) mainPurchasingPanel.getLayout();
+        adminMainPurchasing.show(mainPurchasingPanel, "purchasePanelOne");
+        
+        ImageIcon icoPrchOrd = new ImageIcon(getClass().getResource("/buttons/prchordhvr.png"));
+        prchOrd.setIcon(icoPrchOrd);
+        
+        ImageIcon icoPrchLst = new ImageIcon(getClass().getResource("/buttons/prchlst.png"));
+        prchLst.setIcon(icoPrchLst);
+        
+        
+        
+        CardLayout adminPurchase = (CardLayout) supplierPanel.getLayout();
+        adminPurchase.show(supplierPanel, "supplierPanelOne");
+        
+        ImageIcon icoNewPurchase = new ImageIcon(getClass().getResource("/buttons/sshvr.png"));
+        newPurchase.setIcon(icoNewPurchase);
+        
+        ImageIcon icoReceiveStock = new ImageIcon(getClass().getResource("/buttons/rs.png"));
+        receivedStock.setIcon(icoReceiveStock);
+        
+        ImageIcon icoReturnsStock = new ImageIcon(getClass().getResource("/buttons/rt.png"));
+        returnsStock.setIcon(icoReturnsStock);
+       
     }//GEN-LAST:event_purchasingMouseClicked
 
     private void inventoryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inventoryMouseEntered
@@ -4175,6 +4477,34 @@ public class main extends javax.swing.JFrame {
     private void inventoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inventoryMouseClicked
         CardLayout admin = (CardLayout) mainPanel.getLayout();
         admin.show(mainPanel, "inventoryPanel");
+        
+        CardLayout adminInventory = (CardLayout) mainInventoryPanel.getLayout();
+        adminInventory.show(mainInventoryPanel, "inventoryPanelOne");
+        
+        ImageIcon icostocks = new ImageIcon(getClass().getResource("/buttons/stockshvr.png"));
+        stocks.setIcon(icostocks);
+                
+        ImageIcon icoproducts = new ImageIcon(getClass().getResource("/buttons/products.png"));
+        products.setIcon(icoproducts);
+        
+        ImageIcon icoarchery = new ImageIcon(getClass().getResource("/buttons/archery.png"));
+        archery.setIcon(icoarchery);
+        
+        ImageIcon icoadjustment = new ImageIcon(getClass().getResource("/buttons/adjust.png"));
+        adjustment.setIcon(icoadjustment);
+        
+        
+        CardLayout adminStocks = (CardLayout) stocksPanel.getLayout();
+        adminStocks.show(stocksPanel, "stocksPanelOne");
+        
+        ImageIcon icoCurrent = new ImageIcon(getClass().getResource("/buttons/cshvr.png"));
+        currentStock.setIcon(icoCurrent);
+        
+        ImageIcon icCurrent = new ImageIcon(getClass().getResource("/buttons/ros.png"));
+        reOrderPoint.setIcon(icCurrent);
+        
+        ImageIcon iCurrent = new ImageIcon(getClass().getResource("/buttons/l.png"));
+        ledger.setIcon(iCurrent);
     }//GEN-LAST:event_inventoryMouseClicked
 
     private void miscellanyMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_miscellanyMouseEntered
@@ -4190,6 +4520,35 @@ public class main extends javax.swing.JFrame {
     private void miscellanyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_miscellanyMouseClicked
         CardLayout admin = (CardLayout) mainPanel.getLayout();
         admin.show(mainPanel, "miscellanyPanel");
+        
+        
+        CardLayout adminMainMiscellany = (CardLayout) mainMiscellanyPanel.getLayout();
+        adminMainMiscellany.show(mainMiscellanyPanel, "miscellanyPanelOne");
+        
+        ImageIcon icoSuppliers = new ImageIcon(getClass().getResource("/buttons/suppliershvr.png"));
+        suppliers.setIcon(icoSuppliers);
+        
+        ImageIcon icoEmployees = new ImageIcon(getClass().getResource("/buttons/employees.png"));
+        employees.setIcon(icoEmployees);
+        
+        ImageIcon icoAccounts = new ImageIcon(getClass().getResource("/buttons/account.png"));
+        accounts.setIcon(icoAccounts);
+        
+        ImageIcon icoOrders = new ImageIcon(getClass().getResource("/buttons/ordermon.png"));
+        orders.setIcon(icoOrders);
+        
+        ImageIcon icoReports = new ImageIcon(getClass().getResource("/buttons/reports.png"));
+        reports.setIcon(icoReports);
+        
+        
+        CardLayout adminSupplier = (CardLayout) suppliersPanel.getLayout();
+        adminSupplier.show(suppliersPanel, "suppliersPanelOne");
+        
+        ImageIcon icoNewSupplier = new ImageIcon(getClass().getResource("/buttons/nshvr.png"));
+        newSupplier.setIcon(icoNewSupplier);
+        
+        ImageIcon icoSuppierList = new ImageIcon(getClass().getResource("/buttons/sl.png"));
+        suppierList.setIcon(icoSuppierList);
     }//GEN-LAST:event_miscellanyMouseClicked
 
     private void close1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_close1MouseEntered
@@ -4226,18 +4585,38 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_logOut1MouseClicked
 
     private void prchOrdMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_prchOrdMouseEntered
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/prchordhvr.png"));
-       prchOrd.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/prchordhvr.png"));
+       //prchOrd.setIcon(ico);
     }//GEN-LAST:event_prchOrdMouseEntered
 
     private void prchOrdMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_prchOrdMouseExited
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/prchord.png"));
-       prchOrd.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/prchord.png"));
+       //prchOrd.setIcon(ico);
     }//GEN-LAST:event_prchOrdMouseExited
 
     private void prchOrdMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_prchOrdMouseClicked
-        CardLayout admin = (CardLayout) mainPurchasingPanel.getLayout();
-        admin.show(mainPurchasingPanel, "purchasePanelOne");
+        CardLayout adminMainPurchasing = (CardLayout) mainPurchasingPanel.getLayout();
+        adminMainPurchasing.show(mainPurchasingPanel, "purchasePanelOne");
+        
+        ImageIcon icoPrchOrd = new ImageIcon(getClass().getResource("/buttons/prchordhvr.png"));
+        prchOrd.setIcon(icoPrchOrd);
+        
+        ImageIcon icoPrchLst = new ImageIcon(getClass().getResource("/buttons/prchlst.png"));
+        prchLst.setIcon(icoPrchLst);
+        
+        
+        
+        CardLayout adminPurchase = (CardLayout) supplierPanel.getLayout();
+        adminPurchase.show(supplierPanel, "supplierPanelOne");
+        
+        ImageIcon icoNewPurchase = new ImageIcon(getClass().getResource("/buttons/sshvr.png"));
+        newPurchase.setIcon(icoNewPurchase);
+        
+        ImageIcon icoReceiveStock = new ImageIcon(getClass().getResource("/buttons/rs.png"));
+        receivedStock.setIcon(icoReceiveStock);
+        
+        ImageIcon icoReturnsStock = new ImageIcon(getClass().getResource("/buttons/rt.png"));
+        returnsStock.setIcon(icoReturnsStock);
     }//GEN-LAST:event_prchOrdMouseClicked
 
     private void prchLstMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_prchLstMouseEntered
@@ -4253,96 +4632,171 @@ public class main extends javax.swing.JFrame {
     private void prchLstMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_prchLstMouseClicked
         CardLayout admin = (CardLayout) mainPurchasingPanel.getLayout();
         admin.show(mainPurchasingPanel, "purchasePanelTwo");
+        
+        ImageIcon icoPrchLst = new ImageIcon(getClass().getResource("/buttons/prchlsthvr.png"));
+        prchLst.setIcon(icoPrchLst);
+        
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/prchord.png"));
+        prchOrd.setIcon(ico);
+        
+        
+       CardLayout adminPurchaseList = (CardLayout) purchaseListPanel.getLayout();
+       adminPurchaseList.show(purchaseListPanel, "subPurchaseListPanelOne");
+       
+       ImageIcon icoPurchasedOrder = new ImageIcon(getClass().getResource("/buttons/pohvr.png"));
+       purchasedOrder.setIcon(icoPurchasedOrder);
+       
+       ImageIcon icoUnreceivedOrder = new ImageIcon(getClass().getResource("/buttons/uo.png"));
+       unreceivedOrder.setIcon(icoUnreceivedOrder);
+       
+       ImageIcon icoUnpaidOrder = new ImageIcon(getClass().getResource("/buttons/upo.png"));
+       unpaidOrder.setIcon(icoUnpaidOrder);
     }//GEN-LAST:event_prchLstMouseClicked
 
-    private void selectSupplierMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selectSupplierMouseEntered
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/sshvr.png"));
-       selectSupplier.setIcon(ico);
-    }//GEN-LAST:event_selectSupplierMouseEntered
+    private void newPurchaseMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newPurchaseMouseEntered
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/sshvr.png"));
+       //newPurchase.setIcon(ico);
+    }//GEN-LAST:event_newPurchaseMouseEntered
 
-    private void selectSupplierMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selectSupplierMouseExited
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/ss.png"));
-       selectSupplier.setIcon(ico);
-    }//GEN-LAST:event_selectSupplierMouseExited
+    private void newPurchaseMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newPurchaseMouseExited
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/ss.png"));
+       //newPurchase.setIcon(ico);
+    }//GEN-LAST:event_newPurchaseMouseExited
 
-    private void selectSupplierMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selectSupplierMouseClicked
+    private void newPurchaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newPurchaseMouseClicked
         CardLayout admin = (CardLayout) supplierPanel.getLayout();
         admin.show(supplierPanel, "supplierPanelOne");
-    }//GEN-LAST:event_selectSupplierMouseClicked
+        
+        ImageIcon icoNewPurchase = new ImageIcon(getClass().getResource("/buttons/sshvr.png"));
+        newPurchase.setIcon(icoNewPurchase);
+        
+        ImageIcon icoReceiveStock = new ImageIcon(getClass().getResource("/buttons/rs.png"));
+        receivedStock.setIcon(icoReceiveStock);
+        
+        ImageIcon icoReturnsStock = new ImageIcon(getClass().getResource("/buttons/rt.png"));
+        returnsStock.setIcon(icoReturnsStock);
+    }//GEN-LAST:event_newPurchaseMouseClicked
 
     private void receivedStockMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_receivedStockMouseEntered
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/rshvr.png"));
-       receivedStock.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/rshvr.png"));
+       //receivedStock.setIcon(ico);
     }//GEN-LAST:event_receivedStockMouseEntered
 
     private void receivedStockMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_receivedStockMouseExited
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/rs.png"));
-       receivedStock.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/rs.png"));
+       //receivedStock.setIcon(ico);
     }//GEN-LAST:event_receivedStockMouseExited
 
     private void receivedStockMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_receivedStockMouseClicked
-        CardLayout admin = (CardLayout) supplierPanel.getLayout();
-        admin.show(supplierPanel, "supplierPanelTwo");
+        CardLayout adminReceive = (CardLayout) supplierPanel.getLayout();
+        adminReceive.show(supplierPanel, "supplierPanelTwo");
+        
+        ImageIcon icoreceiveStock = new ImageIcon(getClass().getResource("/buttons/rshvr.png"));
+        receivedStock.setIcon(icoreceiveStock);
+        
+        ImageIcon icoNewPurchase = new ImageIcon(getClass().getResource("/buttons/ss.png"));
+        newPurchase.setIcon(icoNewPurchase);
+        
+        ImageIcon icoReturnsStock = new ImageIcon(getClass().getResource("/buttons/rt.png"));
+        returnsStock.setIcon(icoReturnsStock);
     }//GEN-LAST:event_receivedStockMouseClicked
 
     private void returnsStockMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_returnsStockMouseEntered
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/rthvr.png"));
-       returnsStock.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/rthvr.png"));
+       //returnsStock.setIcon(ico);
     }//GEN-LAST:event_returnsStockMouseEntered
 
     private void returnsStockMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_returnsStockMouseExited
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/rt.png"));
-       returnsStock.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/rt.png"));
+       //returnsStock.setIcon(ico);
     }//GEN-LAST:event_returnsStockMouseExited
 
     private void returnsStockMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_returnsStockMouseClicked
-       CardLayout admin = (CardLayout) supplierPanel.getLayout();
-       admin.show(supplierPanel, "supplierPanelThree");
+       CardLayout adminReturns = (CardLayout) supplierPanel.getLayout();
+       adminReturns.show(supplierPanel, "supplierPanelThree");
+       
+       ImageIcon icoNewPurchase = new ImageIcon(getClass().getResource("/buttons/ss.png"));
+       newPurchase.setIcon(icoNewPurchase);
+       
+       ImageIcon icoReceiveStock = new ImageIcon(getClass().getResource("/buttons/rs.png"));
+       receivedStock.setIcon(icoReceiveStock);
+        
+       ImageIcon icoReturns = new ImageIcon(getClass().getResource("/buttons/rthvr.png"));
+       returnsStock.setIcon(icoReturns);
+       
     }//GEN-LAST:event_returnsStockMouseClicked
 
     private void purchasedOrderMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_purchasedOrderMouseEntered
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/pohvr.png"));
-       purchasedOrder.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/pohvr.png"));
+       //purchasedOrder.setIcon(ico);
     }//GEN-LAST:event_purchasedOrderMouseEntered
 
     private void purchasedOrderMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_purchasedOrderMouseExited
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/po.png"));
-       purchasedOrder.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/po.png"));
+       //purchasedOrder.setIcon(ico);
     }//GEN-LAST:event_purchasedOrderMouseExited
 
     private void purchasedOrderMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_purchasedOrderMouseClicked
        CardLayout admin = (CardLayout) purchaseListPanel.getLayout();
        admin.show(purchaseListPanel, "subPurchaseListPanelOne");
+       
+       ImageIcon icoPurchasedOrder = new ImageIcon(getClass().getResource("/buttons/pohvr.png"));
+       purchasedOrder.setIcon(icoPurchasedOrder);
+       
+       ImageIcon icoUnreceivedOrder = new ImageIcon(getClass().getResource("/buttons/uo.png"));
+       unreceivedOrder.setIcon(icoUnreceivedOrder);
+       
+       ImageIcon icoUnpaidOrder = new ImageIcon(getClass().getResource("/buttons/upo.png"));
+       unpaidOrder.setIcon(icoUnpaidOrder);
     }//GEN-LAST:event_purchasedOrderMouseClicked
 
     private void unreceivedOrderMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unreceivedOrderMouseEntered
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/uohvr.png"));
-       unreceivedOrder.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/uohvr.png"));
+       //unreceivedOrder.setIcon(ico);
     }//GEN-LAST:event_unreceivedOrderMouseEntered
 
     private void unreceivedOrderMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unreceivedOrderMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/uo.png"));
-        unreceivedOrder.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/uo.png"));
+        //unreceivedOrder.setIcon(ico);
     }//GEN-LAST:event_unreceivedOrderMouseExited
 
     private void unreceivedOrderMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unreceivedOrderMouseClicked
        CardLayout admin = (CardLayout) purchaseListPanel.getLayout();
        admin.show(purchaseListPanel, "subPurchaseListPanelTwo");
+       
+       ImageIcon icoPurchasedOrder = new ImageIcon(getClass().getResource("/buttons/po.png"));
+       purchasedOrder.setIcon(icoPurchasedOrder);
+       
+       ImageIcon icoUnreceivedOrder = new ImageIcon(getClass().getResource("/buttons/uohvr.png"));
+       unreceivedOrder.setIcon(icoUnreceivedOrder);
+       
+       ImageIcon icoUnpaidOrder = new ImageIcon(getClass().getResource("/buttons/upo.png"));
+       unpaidOrder.setIcon(icoUnpaidOrder);
     }//GEN-LAST:event_unreceivedOrderMouseClicked
 
     private void unpaidOrderMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unpaidOrderMouseEntered
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/upohvr.png"));
-       unpaidOrder.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/upohvr.png"));
+       //unpaidOrder.setIcon(ico);
     }//GEN-LAST:event_unpaidOrderMouseEntered
 
     private void unpaidOrderMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unpaidOrderMouseExited
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/upo.png"));
-       unpaidOrder.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/upo.png"));
+       //unpaidOrder.setIcon(ico);
     }//GEN-LAST:event_unpaidOrderMouseExited
 
     private void unpaidOrderMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unpaidOrderMouseClicked
        CardLayout admin = (CardLayout) purchaseListPanel.getLayout();
        admin.show(purchaseListPanel, "subPurchaseListPanelThree");
+       
+       ImageIcon icoPurchasedOrder = new ImageIcon(getClass().getResource("/buttons/po.png"));
+       purchasedOrder.setIcon(icoPurchasedOrder);
+       
+       ImageIcon icoUnreceivedOrder = new ImageIcon(getClass().getResource("/buttons/uo.png"));
+       unreceivedOrder.setIcon(icoUnreceivedOrder);
+       
+       ImageIcon icoUnpaidOrder = new ImageIcon(getClass().getResource("/buttons/upohvr.png"));
+       unpaidOrder.setIcon(icoUnpaidOrder);
+       
     }//GEN-LAST:event_unpaidOrderMouseClicked
 
     private void close3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_close3MouseEntered
@@ -4365,63 +4819,174 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_back3MouseClicked
 
     private void suppliersMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_suppliersMouseEntered
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/suppliershvr.png"));
-       suppliers.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/suppliershvr.png"));
+       //suppliers.setIcon(ico);
     }//GEN-LAST:event_suppliersMouseEntered
 
     private void suppliersMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_suppliersMouseExited
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/suppliers.png"));
-       suppliers.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/suppliers.png"));
+       //suppliers.setIcon(ico);
     }//GEN-LAST:event_suppliersMouseExited
 
     private void suppliersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_suppliersMouseClicked
         CardLayout admin = (CardLayout) mainMiscellanyPanel.getLayout();
         admin.show(mainMiscellanyPanel, "miscellanyPanelOne");
+        
+        ImageIcon icoSuppliers = new ImageIcon(getClass().getResource("/buttons/suppliershvr.png"));
+        suppliers.setIcon(icoSuppliers);
+        
+        ImageIcon icoEmployees = new ImageIcon(getClass().getResource("/buttons/employees.png"));
+        employees.setIcon(icoEmployees);
+        
+        ImageIcon icoAccounts = new ImageIcon(getClass().getResource("/buttons/account.png"));
+        accounts.setIcon(icoAccounts);
+        
+        ImageIcon icoOrders = new ImageIcon(getClass().getResource("/buttons/ordermon.png"));
+        orders.setIcon(icoOrders);
+        
+        ImageIcon icoReports = new ImageIcon(getClass().getResource("/buttons/reports.png"));
+        reports.setIcon(icoReports);
+        
+        
+        CardLayout adminSupplier = (CardLayout) suppliersPanel.getLayout();
+        adminSupplier.show(suppliersPanel, "suppliersPanelOne");
+        
+        ImageIcon icoNewSupplier = new ImageIcon(getClass().getResource("/buttons/nshvr.png"));
+        newSupplier.setIcon(icoNewSupplier);
+        
+        ImageIcon icoSuppierList = new ImageIcon(getClass().getResource("/buttons/sl.png"));
+        suppierList.setIcon(icoSuppierList);
     }//GEN-LAST:event_suppliersMouseClicked
 
     private void employeesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_employeesMouseEntered
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/employeeshvr.png"));
-       employees.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/employeeshvr.png"));
+       //employees.setIcon(ico);
     }//GEN-LAST:event_employeesMouseEntered
 
     private void employeesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_employeesMouseExited
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/employees.png"));
-       employees.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/employees.png"));
+       //employees.setIcon(ico);
     }//GEN-LAST:event_employeesMouseExited
 
     private void employeesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_employeesMouseClicked
         CardLayout admin = (CardLayout) mainMiscellanyPanel.getLayout();
         admin.show(mainMiscellanyPanel, "miscellanyPanelTwo");
+        
+        ImageIcon icoSuppliers = new ImageIcon(getClass().getResource("/buttons/suppliers.png"));
+        suppliers.setIcon(icoSuppliers);
+        
+        ImageIcon icoEmployees = new ImageIcon(getClass().getResource("/buttons/employeeshvr.png"));
+        employees.setIcon(icoEmployees);
+        
+        ImageIcon icoAccounts = new ImageIcon(getClass().getResource("/buttons/account.png"));
+        accounts.setIcon(icoAccounts);
+        
+        ImageIcon icoOrders = new ImageIcon(getClass().getResource("/buttons/ordermon.png"));
+        orders.setIcon(icoOrders);
+        
+        ImageIcon icoReports = new ImageIcon(getClass().getResource("/buttons/reports.png"));
+        reports.setIcon(icoReports);
+        
+        
+        CardLayout adminEmployee = (CardLayout) employeesPanel.getLayout();
+        adminEmployee.show(employeesPanel, "employeesPanelOne");
+        
+        ImageIcon icoNewEmployee = new ImageIcon(getClass().getResource("/buttons/nehvr.png"));
+        newEmployee.setIcon(icoNewEmployee);
+        
+        ImageIcon icoEmployeeList = new ImageIcon(getClass().getResource("/buttons/el.png"));
+        employeeList.setIcon(icoEmployeeList);
     }//GEN-LAST:event_employeesMouseClicked
 
     private void ordersMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ordersMouseEntered
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/ordermonhvr.png"));
-       orders.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/ordermonhvr.png"));
+       //orders.setIcon(ico);
     }//GEN-LAST:event_ordersMouseEntered
 
     private void ordersMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ordersMouseExited
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/ordermon.png"));
-       orders.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/ordermon.png"));
+       //orders.setIcon(ico);
     }//GEN-LAST:event_ordersMouseExited
 
     private void ordersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ordersMouseClicked
         CardLayout admin = (CardLayout) mainMiscellanyPanel.getLayout();
         admin.show(mainMiscellanyPanel, "miscellanyPanelThree");
+        
+        ImageIcon icoSuppliers = new ImageIcon(getClass().getResource("/buttons/suppliers.png"));
+        suppliers.setIcon(icoSuppliers);
+        
+        ImageIcon icoEmployees = new ImageIcon(getClass().getResource("/buttons/employees.png"));
+        employees.setIcon(icoEmployees);
+        
+        ImageIcon icoAccounts = new ImageIcon(getClass().getResource("/buttons/account.png"));
+        accounts.setIcon(icoAccounts);
+        
+        ImageIcon icoOrders = new ImageIcon(getClass().getResource("/buttons/ordermonhvr.png"));
+        orders.setIcon(icoOrders);
+        
+        ImageIcon icoReports = new ImageIcon(getClass().getResource("/buttons/reports.png"));
+        reports.setIcon(icoReports);
     }//GEN-LAST:event_ordersMouseClicked
 
     private void reportsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_reportsMouseEntered
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/reportshvr.png"));
-       reports.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/reportshvr.png"));
+       //reports.setIcon(ico);
     }//GEN-LAST:event_reportsMouseEntered
 
     private void reportsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_reportsMouseExited
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/reports.png"));
-       reports.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/reports.png"));
+       //reports.setIcon(ico);
     }//GEN-LAST:event_reportsMouseExited
 
     private void reportsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_reportsMouseClicked
         CardLayout admin = (CardLayout) mainMiscellanyPanel.getLayout();
         admin.show(mainMiscellanyPanel, "miscellanyPanelFour");
+        
+        ImageIcon icoSuppliers = new ImageIcon(getClass().getResource("/buttons/suppliers.png"));
+        suppliers.setIcon(icoSuppliers);
+        
+        ImageIcon icoEmployees = new ImageIcon(getClass().getResource("/buttons/employees.png"));
+        employees.setIcon(icoEmployees);
+        
+        ImageIcon icoAccounts = new ImageIcon(getClass().getResource("/buttons/account.png"));
+        accounts.setIcon(icoAccounts);
+        
+        ImageIcon icoOrders = new ImageIcon(getClass().getResource("/buttons/ordermon.png"));
+        orders.setIcon(icoOrders);
+        
+        ImageIcon icoReports = new ImageIcon(getClass().getResource("/buttons/reportshvr.png"));
+        reports.setIcon(icoReports);
+        
+        
+        
+        CardLayout adminReports = (CardLayout) reportsPanel.getLayout();
+        adminReports.show(reportsPanel, "reportsPanelOne");
+        
+        ImageIcon icoSales = new ImageIcon(getClass().getResource("/buttons/shvr.png"));
+        sales.setIcon(icoSales);
+        
+        ImageIcon icoPrchs = new ImageIcon(getClass().getResource("/buttons/p.png"));
+        prchs.setIcon(icoPrchs);
+        
+        ImageIcon icoInvtry = new ImageIcon(getClass().getResource("/buttons/i.png"));
+        invtry.setIcon(icoInvtry);
+        
+        
+        
+        CardLayout adminSalesReport = (CardLayout) salesReport.getLayout();
+        adminSalesReport.show(salesReport, "dailySalesReport");
+        
+        ImageIcon icoDailySales = new ImageIcon(getClass().getResource("/buttons/dailyhvr.png"));
+        dailySales.setIcon(icoDailySales);
+        
+        ImageIcon icoWeeklySales = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        weeklySales.setIcon(icoWeeklySales);
+        
+        ImageIcon icoMonthlySales = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        monthlySales.setIcon(icoMonthlySales);
+        
+        ImageIcon icoYearlySales = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        yearlySales.setIcon(icoYearlySales);
     }//GEN-LAST:event_reportsMouseClicked
 
     private void logOut3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logOut3MouseEntered
@@ -4439,338 +5004,619 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_logOut3MouseClicked
 
     private void newSupplierMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newSupplierMouseEntered
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/nshvr.png"));
-       newSupplier.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/nshvr.png"));
+       //newSupplier.setIcon(ico);
     }//GEN-LAST:event_newSupplierMouseEntered
 
     private void newSupplierMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newSupplierMouseExited
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/ns.png"));
-       newSupplier.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/ns.png"));
+       //newSupplier.setIcon(ico);
     }//GEN-LAST:event_newSupplierMouseExited
 
     private void newSupplierMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newSupplierMouseClicked
         CardLayout admin = (CardLayout) suppliersPanel.getLayout();
         admin.show(suppliersPanel, "suppliersPanelOne");
+        
+        ImageIcon icoNewSupplier = new ImageIcon(getClass().getResource("/buttons/nshvr.png"));
+        newSupplier.setIcon(icoNewSupplier);
+        
+        ImageIcon icoSuppierList = new ImageIcon(getClass().getResource("/buttons/sl.png"));
+        suppierList.setIcon(icoSuppierList);
     }//GEN-LAST:event_newSupplierMouseClicked
 
     private void suppierListMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_suppierListMouseEntered
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/slhvr.png"));
-       suppierList.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/slhvr.png"));
+       //suppierList.setIcon(ico);
     }//GEN-LAST:event_suppierListMouseEntered
 
     private void suppierListMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_suppierListMouseExited
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/sl.png"));
-       suppierList.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/sl.png"));
+       //suppierList.setIcon(ico);
     }//GEN-LAST:event_suppierListMouseExited
 
     private void suppierListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_suppierListMouseClicked
         CardLayout admin = (CardLayout) suppliersPanel.getLayout();
         admin.show(suppliersPanel, "suppliersPanelTwo");
+        
+        ImageIcon icoNewSupplier = new ImageIcon(getClass().getResource("/buttons/ns.png"));
+        newSupplier.setIcon(icoNewSupplier);
+       
+        ImageIcon icoSuppierList = new ImageIcon(getClass().getResource("/buttons/slhvr.png"));
+        suppierList.setIcon(icoSuppierList);
     }//GEN-LAST:event_suppierListMouseClicked
 
     private void newEmployeeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newEmployeeMouseEntered
-       ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/nehvr.png"));
-       newEmployee.setIcon(ico);
+       //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/nehvr.png"));
+       //newEmployee.setIcon(ico);
     }//GEN-LAST:event_newEmployeeMouseEntered
 
     private void newEmployeeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newEmployeeMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/ne.png"));
-        newEmployee.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/ne.png"));
+        //newEmployee.setIcon(ico);
     }//GEN-LAST:event_newEmployeeMouseExited
 
     private void newEmployeeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newEmployeeMouseClicked
         CardLayout admin = (CardLayout) employeesPanel.getLayout();
         admin.show(employeesPanel, "employeesPanelOne");
+        
+        ImageIcon icoNewEmployee = new ImageIcon(getClass().getResource("/buttons/nehvr.png"));
+        newEmployee.setIcon(icoNewEmployee);
+        
+        ImageIcon icoEmployeeList = new ImageIcon(getClass().getResource("/buttons/el.png"));
+        employeeList.setIcon(icoEmployeeList);
     }//GEN-LAST:event_newEmployeeMouseClicked
 
     private void employeeListMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_employeeListMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/elhvr.png"));
-        employeeList.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/elhvr.png"));
+        //employeeList.setIcon(ico);
     }//GEN-LAST:event_employeeListMouseEntered
 
     private void employeeListMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_employeeListMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/el.png"));
-        employeeList.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/el.png"));
+        //employeeList.setIcon(ico);
     }//GEN-LAST:event_employeeListMouseExited
 
     private void employeeListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_employeeListMouseClicked
         CardLayout admin = (CardLayout) employeesPanel.getLayout();
         admin.show(employeesPanel, "employeesPanelTwo");
+        
+        ImageIcon icoEmployeeList = new ImageIcon(getClass().getResource("/buttons/elhvr.png"));
+        employeeList.setIcon(icoEmployeeList);
+        
+        ImageIcon icoNewEmployee = new ImageIcon(getClass().getResource("/buttons/ne.png"));
+        newEmployee.setIcon(icoNewEmployee);
     }//GEN-LAST:event_employeeListMouseClicked
 
     private void salesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_salesMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/shvr.png"));
-        sales.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/shvr.png"));
+        //sales.setIcon(ico);
     }//GEN-LAST:event_salesMouseEntered
 
     private void salesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_salesMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/s.png"));
-        sales.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/s.png"));
+        //sales.setIcon(ico);
     }//GEN-LAST:event_salesMouseExited
 
     private void salesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_salesMouseClicked
         CardLayout admin = (CardLayout) reportsPanel.getLayout();
         admin.show(reportsPanel, "reportsPanelOne");
+        
+        ImageIcon icoSales = new ImageIcon(getClass().getResource("/buttons/shvr.png"));
+        sales.setIcon(icoSales);
+        
+        ImageIcon icoPrchs = new ImageIcon(getClass().getResource("/buttons/p.png"));
+        prchs.setIcon(icoPrchs);
+        
+        ImageIcon icoInvtry = new ImageIcon(getClass().getResource("/buttons/i.png"));
+        invtry.setIcon(icoInvtry);
+        
+        
+        
+        CardLayout adminSalesReport = (CardLayout) salesReport.getLayout();
+        adminSalesReport.show(salesReport, "dailySalesReport");
+        
+        ImageIcon icoDailySales = new ImageIcon(getClass().getResource("/buttons/dailyhvr.png"));
+        dailySales.setIcon(icoDailySales);
+        
+        ImageIcon icoWeeklySales = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        weeklySales.setIcon(icoWeeklySales);
+        
+        ImageIcon icoMonthlySales = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        monthlySales.setIcon(icoMonthlySales);
+        
+        ImageIcon icoYearlySales = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        yearlySales.setIcon(icoYearlySales);
     }//GEN-LAST:event_salesMouseClicked
 
     private void prchsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_prchsMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/phvr.png"));
-        prchs.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/phvr.png"));
+        //prchs.setIcon(ico);
     }//GEN-LAST:event_prchsMouseEntered
 
     private void prchsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_prchsMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/p.png"));
-        prchs.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/p.png"));
+        //prchs.setIcon(ico);
     }//GEN-LAST:event_prchsMouseExited
 
     private void prchsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_prchsMouseClicked
         CardLayout admin = (CardLayout) reportsPanel.getLayout();
         admin.show(reportsPanel, "reportsPanelTwo");
+        
+        ImageIcon icoSales = new ImageIcon(getClass().getResource("/buttons/s.png"));
+        sales.setIcon(icoSales);
+        
+        ImageIcon icoPrchs = new ImageIcon(getClass().getResource("/buttons/phvr.png"));
+        prchs.setIcon(icoPrchs);
+        
+        ImageIcon icoInvtry = new ImageIcon(getClass().getResource("/buttons/i.png"));
+        invtry.setIcon(icoInvtry);
+        
+        
+        CardLayout adminDailyPurchasing = (CardLayout) purchasingReport.getLayout();
+        adminDailyPurchasing.show(purchasingReport, "dailyPurchasingReport");
+        
+        ImageIcon icoDailyPurchasing = new ImageIcon(getClass().getResource("/buttons/dailyhvr.png"));
+        dailyPurchasing.setIcon(icoDailyPurchasing);
+        
+        ImageIcon icoWeeklyPurchasing = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        weeklyPurchasing.setIcon(icoWeeklyPurchasing);
+        
+        ImageIcon icoMonthlyPurchasing = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        monthlyPurchasing.setIcon(icoMonthlyPurchasing);
+        
+        ImageIcon icoYearlyPurchasing = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        yearlyPurchasing.setIcon(icoYearlyPurchasing);
     }//GEN-LAST:event_prchsMouseClicked
 
     private void invtryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_invtryMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/ihvr.png"));
-        invtry.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/ihvr.png"));
+        //invtry.setIcon(ico);
     }//GEN-LAST:event_invtryMouseEntered
 
     private void invtryMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_invtryMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/i.png"));
-        invtry.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/i.png"));
+        //invtry.setIcon(ico);
     }//GEN-LAST:event_invtryMouseExited
 
     private void invtryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_invtryMouseClicked
         CardLayout admin = (CardLayout) reportsPanel.getLayout();
         admin.show(reportsPanel, "reportsPanelThree");
+        
+        ImageIcon icoSales = new ImageIcon(getClass().getResource("/buttons/s.png"));
+        sales.setIcon(icoSales);
+        
+        ImageIcon icoPrchs = new ImageIcon(getClass().getResource("/buttons/p.png"));
+        prchs.setIcon(icoPrchs);
+        
+        ImageIcon icoInvtry = new ImageIcon(getClass().getResource("/buttons/ihvr.png"));
+        invtry.setIcon(icoInvtry);
+        
+        
+        CardLayout adminDailyReport = (CardLayout) inventoryReport.getLayout();
+        adminDailyReport.show(inventoryReport, "dailyInventoryReport");
+        
+        ImageIcon icoDailyInventory = new ImageIcon(getClass().getResource("/buttons/dailyhvr.png"));
+        dailyInventory.setIcon(icoDailyInventory);
+        
+        ImageIcon icoWeeklyInventory = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        weeklyInventory.setIcon(icoWeeklyInventory);
+        
+        ImageIcon icoMonthlyInventory = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        monthlyInventory.setIcon(icoMonthlyInventory);
+        
+        ImageIcon icoYearlyInventory = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        yearlyInventory.setIcon(icoYearlyInventory);
     }//GEN-LAST:event_invtryMouseClicked
 
     private void dailySalesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailySalesMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/dailyhvr.png"));
-        dailySales.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/dailyhvr.png"));
+        //dailySales.setIcon(ico);
     }//GEN-LAST:event_dailySalesMouseEntered
 
     private void dailySalesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailySalesMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/daily.png"));
-        dailySales.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/daily.png"));
+        //dailySales.setIcon(ico);
     }//GEN-LAST:event_dailySalesMouseExited
 
     private void dailySalesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailySalesMouseClicked
         CardLayout admin = (CardLayout) salesReport.getLayout();
         admin.show(salesReport, "dailySalesReport");
+        
+        ImageIcon icoDailySales = new ImageIcon(getClass().getResource("/buttons/dailyhvr.png"));
+        dailySales.setIcon(icoDailySales);
+        
+        ImageIcon icoWeeklySales = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        weeklySales.setIcon(icoWeeklySales);
+        
+        ImageIcon icoMonthlySales = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        monthlySales.setIcon(icoMonthlySales);
+        
+        ImageIcon icoYearlySales = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        yearlySales.setIcon(icoYearlySales);
     }//GEN-LAST:event_dailySalesMouseClicked
 
     private void weeklySalesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklySalesMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weeklyhvr.png"));
-        weeklySales.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weeklyhvr.png"));
+        //weeklySales.setIcon(ico);
     }//GEN-LAST:event_weeklySalesMouseEntered
 
     private void weeklySalesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklySalesMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
-        weeklySales.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        //weeklySales.setIcon(ico);
     }//GEN-LAST:event_weeklySalesMouseExited
 
     private void weeklySalesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklySalesMouseClicked
         CardLayout admin = (CardLayout) salesReport.getLayout();
         admin.show(salesReport, "weeklySalesReport");
+        
+        ImageIcon icoDailySales = new ImageIcon(getClass().getResource("/buttons/daily.png"));
+        dailySales.setIcon(icoDailySales);
+        
+        ImageIcon icoWeeklySales = new ImageIcon(getClass().getResource("/buttons/weeklyhvr.png"));
+        weeklySales.setIcon(icoWeeklySales);
+        
+        ImageIcon icoMonthlySales = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        monthlySales.setIcon(icoMonthlySales);
+        
+        ImageIcon icoYearlySales = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        yearlySales.setIcon(icoYearlySales);
     }//GEN-LAST:event_weeklySalesMouseClicked
 
     private void monthlySalesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlySalesMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhyhvr.png"));
-        monthlySales.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhyhvr.png"));
+        //monthlySales.setIcon(ico);
     }//GEN-LAST:event_monthlySalesMouseEntered
 
     private void monthlySalesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlySalesMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
-        monthlySales.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        //monthlySales.setIcon(ico);
     }//GEN-LAST:event_monthlySalesMouseExited
 
     private void monthlySalesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlySalesMouseClicked
         CardLayout admin = (CardLayout) salesReport.getLayout();
         admin.show(salesReport, "monthlySalesReport");
+        
+        ImageIcon icoDailySales = new ImageIcon(getClass().getResource("/buttons/daily.png"));
+        dailySales.setIcon(icoDailySales);
+        
+        ImageIcon icoWeeklySales = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        weeklySales.setIcon(icoWeeklySales);
+        
+        ImageIcon icoMonthlySales = new ImageIcon(getClass().getResource("/buttons/montlhyhvr.png"));
+        monthlySales.setIcon(icoMonthlySales);
+        
+        ImageIcon icoYearlySales = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        yearlySales.setIcon(icoYearlySales);
     }//GEN-LAST:event_monthlySalesMouseClicked
 
     private void yearlySalesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlySalesMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearlyhvr.png"));
-        yearlySales.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearlyhvr.png"));
+        //yearlySales.setIcon(ico);
     }//GEN-LAST:event_yearlySalesMouseEntered
 
     private void yearlySalesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlySalesMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
-        yearlySales.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        //yearlySales.setIcon(ico);
     }//GEN-LAST:event_yearlySalesMouseExited
 
     private void yearlySalesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlySalesMouseClicked
         CardLayout admin = (CardLayout) salesReport.getLayout();
         admin.show(salesReport, "yearlySalesReport");
+        
+        
+        ImageIcon icoDailySales = new ImageIcon(getClass().getResource("/buttons/daily.png"));
+        dailySales.setIcon(icoDailySales);
+        
+        ImageIcon icoWeeklySales = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        weeklySales.setIcon(icoWeeklySales);
+        
+        ImageIcon icoMonthlySales = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        monthlySales.setIcon(icoMonthlySales);
+        
+        ImageIcon icoYearlySales = new ImageIcon(getClass().getResource("/buttons/yearlyhvr.png"));
+        yearlySales.setIcon(icoYearlySales);
     }//GEN-LAST:event_yearlySalesMouseClicked
 
     private void dailyPurchasingMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailyPurchasingMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/dailyhvr.png"));
-        dailyPurchasing.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/dailyhvr.png"));
+        //dailyPurchasing.setIcon(ico);
     }//GEN-LAST:event_dailyPurchasingMouseEntered
 
     private void dailyPurchasingMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailyPurchasingMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/daily.png"));
-        dailyPurchasing.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/daily.png"));
+        //dailyPurchasing.setIcon(ico);
     }//GEN-LAST:event_dailyPurchasingMouseExited
 
     private void dailyPurchasingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailyPurchasingMouseClicked
         CardLayout admin = (CardLayout) purchasingReport.getLayout();
         admin.show(purchasingReport, "dailyPurchasingReport");
+        
+        ImageIcon icoDailyPurchasing = new ImageIcon(getClass().getResource("/buttons/dailyhvr.png"));
+        dailyPurchasing.setIcon(icoDailyPurchasing);
+        
+        ImageIcon icoWeeklyPurchasing = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        weeklyPurchasing.setIcon(icoWeeklyPurchasing);
+        
+        ImageIcon icoMonthlyPurchasing = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        monthlyPurchasing.setIcon(icoMonthlyPurchasing);
+        
+        ImageIcon icoYearlyPurchasing = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        yearlyPurchasing.setIcon(icoYearlyPurchasing);
     }//GEN-LAST:event_dailyPurchasingMouseClicked
 
     private void weeklyPurchasingMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklyPurchasingMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weeklyhvr.png"));
-        weeklyPurchasing.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weeklyhvr.png"));
+        //weeklyPurchasing.setIcon(ico);
     }//GEN-LAST:event_weeklyPurchasingMouseEntered
 
     private void weeklyPurchasingMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklyPurchasingMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
-        weeklyPurchasing.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        //weeklyPurchasing.setIcon(ico);
     }//GEN-LAST:event_weeklyPurchasingMouseExited
 
     private void weeklyPurchasingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklyPurchasingMouseClicked
         CardLayout admin = (CardLayout) purchasingReport.getLayout();
         admin.show(purchasingReport, "weeklyPurchasingReport");
+        
+        ImageIcon icoDailyPurchasing = new ImageIcon(getClass().getResource("/buttons/daily.png"));
+        dailyPurchasing.setIcon(icoDailyPurchasing);
+        
+        ImageIcon icoWeeklyPurchasing = new ImageIcon(getClass().getResource("/buttons/weeklyhvr.png"));
+        weeklyPurchasing.setIcon(icoWeeklyPurchasing);
+        
+        ImageIcon icoMonthlyPurchasing = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        monthlyPurchasing.setIcon(icoMonthlyPurchasing);
+        
+        ImageIcon icoYearlyPurchasing = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        yearlyPurchasing.setIcon(icoYearlyPurchasing);
     }//GEN-LAST:event_weeklyPurchasingMouseClicked
 
     private void monthlyPurchasingMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlyPurchasingMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhyhvr.png"));
-        monthlyPurchasing.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhyhvr.png"));
+        //monthlyPurchasing.setIcon(ico);
     }//GEN-LAST:event_monthlyPurchasingMouseEntered
 
     private void monthlyPurchasingMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlyPurchasingMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
-        monthlyPurchasing.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        //monthlyPurchasing.setIcon(ico);
     }//GEN-LAST:event_monthlyPurchasingMouseExited
 
     private void monthlyPurchasingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlyPurchasingMouseClicked
         CardLayout admin = (CardLayout) purchasingReport.getLayout();
         admin.show(purchasingReport, "monthlyPurchasingReport");
+        
+        ImageIcon icoDailyPurchasing = new ImageIcon(getClass().getResource("/buttons/daily.png"));
+        dailyPurchasing.setIcon(icoDailyPurchasing);
+        
+        ImageIcon icoWeeklyPurchasing = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        weeklyPurchasing.setIcon(icoWeeklyPurchasing);
+        
+        ImageIcon icoMonthlyPurchasing = new ImageIcon(getClass().getResource("/buttons/montlhyhvr.png"));
+        monthlyPurchasing.setIcon(icoMonthlyPurchasing);
+        
+        ImageIcon icoYearlyPurchasing = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        yearlyPurchasing.setIcon(icoYearlyPurchasing);
     }//GEN-LAST:event_monthlyPurchasingMouseClicked
 
     private void yearlyPurchasingMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlyPurchasingMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearlyhvr.png"));
-        yearlyPurchasing.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearlyhvr.png"));
+        //yearlyPurchasing.setIcon(ico);
     }//GEN-LAST:event_yearlyPurchasingMouseEntered
 
     private void yearlyPurchasingMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlyPurchasingMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
-        yearlyPurchasing.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        //yearlyPurchasing.setIcon(ico);
     }//GEN-LAST:event_yearlyPurchasingMouseExited
 
     private void yearlyPurchasingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlyPurchasingMouseClicked
         CardLayout admin = (CardLayout) purchasingReport.getLayout();
         admin.show(purchasingReport, "yearlyPurchasingReport");
+        
+        ImageIcon icoDailyPurchasing = new ImageIcon(getClass().getResource("/buttons/daily.png"));
+        dailyPurchasing.setIcon(icoDailyPurchasing);
+        
+        ImageIcon icoWeeklyPurchasing = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        weeklyPurchasing.setIcon(icoWeeklyPurchasing);
+        
+        ImageIcon icoMonthlyPurchasing = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        monthlyPurchasing.setIcon(icoMonthlyPurchasing);
+        
+        ImageIcon icoYearlyPurchasing = new ImageIcon(getClass().getResource("/buttons/yearlyhvr.png"));
+        yearlyPurchasing.setIcon(icoYearlyPurchasing);
     }//GEN-LAST:event_yearlyPurchasingMouseClicked
 
     private void dailyInventoryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailyInventoryMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/dailyhvr.png"));
-        dailyInventory.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/dailyhvr.png"));
+        //dailyInventory.setIcon(ico);
     }//GEN-LAST:event_dailyInventoryMouseEntered
 
     private void dailyInventoryMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailyInventoryMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/daily.png"));
-        dailyInventory.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/daily.png"));
+        //dailyInventory.setIcon(ico);
     }//GEN-LAST:event_dailyInventoryMouseExited
 
     private void dailyInventoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailyInventoryMouseClicked
         CardLayout admin = (CardLayout) inventoryReport.getLayout();
         admin.show(inventoryReport, "dailyInventoryReport");
+        
+        ImageIcon icoDailyInventory = new ImageIcon(getClass().getResource("/buttons/dailyhvr.png"));
+        dailyInventory.setIcon(icoDailyInventory);
+        
+        ImageIcon icoWeeklyInventory = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        weeklyInventory.setIcon(icoWeeklyInventory);
+        
+        ImageIcon icoMonthlyInventory = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        monthlyInventory.setIcon(icoMonthlyInventory);
+        
+        ImageIcon icoYearlyInventory = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        yearlyInventory.setIcon(icoYearlyInventory);
     }//GEN-LAST:event_dailyInventoryMouseClicked
 
     private void weeklyInventoryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklyInventoryMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weeklyhvr.png"));
-        weeklyInventory.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weeklyhvr.png"));
+        //weeklyInventory.setIcon(ico);
     }//GEN-LAST:event_weeklyInventoryMouseEntered
 
     private void weeklyInventoryMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklyInventoryMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
-        weeklyInventory.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        //weeklyInventory.setIcon(ico);
     }//GEN-LAST:event_weeklyInventoryMouseExited
 
     private void weeklyInventoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_weeklyInventoryMouseClicked
         CardLayout admin = (CardLayout) inventoryReport.getLayout();
         admin.show(inventoryReport, "weeklyInventoryReport");
+        
+        
+        ImageIcon icoDailyInventory = new ImageIcon(getClass().getResource("/buttons/daily.png"));
+        dailyInventory.setIcon(icoDailyInventory);
+        
+        ImageIcon icoWeeklyInventory = new ImageIcon(getClass().getResource("/buttons/weeklyhvr.png"));
+        weeklyInventory.setIcon(icoWeeklyInventory);
+        
+        ImageIcon icoMonthlyInventory = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        monthlyInventory.setIcon(icoMonthlyInventory);
+        
+        ImageIcon icoYearlyInventory = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        yearlyInventory.setIcon(icoYearlyInventory);
     }//GEN-LAST:event_weeklyInventoryMouseClicked
 
     private void monthlyInventoryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlyInventoryMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhyhvr.png"));
-        monthlyInventory.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhyhvr.png"));
+        //monthlyInventory.setIcon(ico);
     }//GEN-LAST:event_monthlyInventoryMouseEntered
 
     private void monthlyInventoryMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlyInventoryMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
-        monthlyInventory.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        //monthlyInventory.setIcon(ico);
     }//GEN-LAST:event_monthlyInventoryMouseExited
 
     private void monthlyInventoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monthlyInventoryMouseClicked
         CardLayout admin = (CardLayout) inventoryReport.getLayout();
         admin.show(inventoryReport, "monthlyInventoryReport");
+        
+        
+        ImageIcon icoDailyInventory = new ImageIcon(getClass().getResource("/buttons/daily.png"));
+        dailyInventory.setIcon(icoDailyInventory);
+        
+        ImageIcon icoWeeklyInventory = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        weeklyInventory.setIcon(icoWeeklyInventory);
+        
+        ImageIcon icoMonthlyInventory = new ImageIcon(getClass().getResource("/buttons/montlhyhvr.png"));
+        monthlyInventory.setIcon(icoMonthlyInventory);
+        
+        ImageIcon icoYearlyInventory = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        yearlyInventory.setIcon(icoYearlyInventory);
     }//GEN-LAST:event_monthlyInventoryMouseClicked
 
     private void yearlyInventoryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlyInventoryMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearlyhvr.png"));
-        yearlyInventory.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearlyhvr.png"));
+        //yearlyInventory.setIcon(ico);
     }//GEN-LAST:event_yearlyInventoryMouseEntered
 
     private void yearlyInventoryMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlyInventoryMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
-        yearlyInventory.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/yearly.png"));
+        //yearlyInventory.setIcon(ico);
     }//GEN-LAST:event_yearlyInventoryMouseExited
 
     private void yearlyInventoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yearlyInventoryMouseClicked
         CardLayout admin = (CardLayout) inventoryReport.getLayout();
         admin.show(inventoryReport, "yearlyInventoryReport");
+        
+        
+        ImageIcon icoDailyInventory = new ImageIcon(getClass().getResource("/buttons/daily.png"));
+        dailyInventory.setIcon(icoDailyInventory);
+        
+        ImageIcon icoWeeklyInventory = new ImageIcon(getClass().getResource("/buttons/weekly.png"));
+        weeklyInventory.setIcon(icoWeeklyInventory);
+        
+        ImageIcon icoMonthlyInventory = new ImageIcon(getClass().getResource("/buttons/montlhy.png"));
+        monthlyInventory.setIcon(icoMonthlyInventory);
+        
+        ImageIcon icoYearlyInventory = new ImageIcon(getClass().getResource("/buttons/yearlyhvr.png"));
+        yearlyInventory.setIcon(icoYearlyInventory);
     }//GEN-LAST:event_yearlyInventoryMouseClicked
 
     private void accountsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_accountsMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/accounthvr.png"));
-        accounts.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/accounthvr.png"));
+        //accounts.setIcon(ico);
     }//GEN-LAST:event_accountsMouseEntered
 
     private void accountsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_accountsMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/account.png"));
-        accounts.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/account.png"));
+        //accounts.setIcon(ico);
     }//GEN-LAST:event_accountsMouseExited
 
     private void accountsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_accountsMouseClicked
         CardLayout admin = (CardLayout) mainMiscellanyPanel.getLayout();
         admin.show(mainMiscellanyPanel, "miscellanyPanelFive");
+        
+        ImageIcon icoSuppliers = new ImageIcon(getClass().getResource("/buttons/suppliers.png"));
+        suppliers.setIcon(icoSuppliers);
+        
+        ImageIcon icoEmployees = new ImageIcon(getClass().getResource("/buttons/employees.png"));
+        employees.setIcon(icoEmployees);
+        
+        ImageIcon icoAccounts = new ImageIcon(getClass().getResource("/buttons/accounthvr.png"));
+        accounts.setIcon(icoAccounts);
+        
+        ImageIcon icoOrders = new ImageIcon(getClass().getResource("/buttons/ordermon.png"));
+        orders.setIcon(icoOrders);
+        
+        ImageIcon icoReports = new ImageIcon(getClass().getResource("/buttons/reports.png"));
+        reports.setIcon(icoReports);
+        
+        
+        CardLayout adminAccount = (CardLayout) accountPanel.getLayout();
+        adminAccount.show(accountPanel, "newAccountPanel");
+        
+        ImageIcon icoNewAccount = new ImageIcon(getClass().getResource("/buttons/nahvr.png"));
+        newAccount.setIcon(icoNewAccount);
+        
+        ImageIcon icoAccountList = new ImageIcon(getClass().getResource("/buttons/al.png"));
+        accountList.setIcon(icoAccountList);
     }//GEN-LAST:event_accountsMouseClicked
 
     private void newAccountMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newAccountMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/nahvr.png"));
-        newAccount.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/nahvr.png"));
+        //newAccount.setIcon(ico);
     }//GEN-LAST:event_newAccountMouseEntered
 
     private void newAccountMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newAccountMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/na.png"));
-        newAccount.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/na.png"));
+        //newAccount.setIcon(ico);
     }//GEN-LAST:event_newAccountMouseExited
 
     private void newAccountMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newAccountMouseClicked
         CardLayout admin = (CardLayout) accountPanel.getLayout();
         admin.show(accountPanel, "newAccountPanel");
+        
+        ImageIcon icoNewAccount = new ImageIcon(getClass().getResource("/buttons/nahvr.png"));
+        newAccount.setIcon(icoNewAccount);
+        
+        ImageIcon icoAccountList = new ImageIcon(getClass().getResource("/buttons/al.png"));
+        accountList.setIcon(icoAccountList);
     }//GEN-LAST:event_newAccountMouseClicked
 
     private void accountListMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_accountListMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/alhvr.png"));
-        accountList.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/alhvr.png"));
+        //accountList.setIcon(ico);
     }//GEN-LAST:event_accountListMouseEntered
 
     private void accountListMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_accountListMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/al.png"));
-        accountList.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/al.png"));
+        //accountList.setIcon(ico);
     }//GEN-LAST:event_accountListMouseExited
 
     private void accountListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_accountListMouseClicked
         CardLayout admin = (CardLayout) accountPanel.getLayout();
         admin.show(accountPanel, "listAccountPanel");
+        
+        ImageIcon icoAccountList = new ImageIcon(getClass().getResource("/buttons/alhvr.png"));
+        accountList.setIcon(icoAccountList);
+        
+        ImageIcon icoNewAccount = new ImageIcon(getClass().getResource("/buttons/na.png"));
+        newAccount.setIcon(icoNewAccount);
     }//GEN-LAST:event_accountListMouseClicked
-
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     private void close2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_close2MouseClicked
         System.exit(0);
@@ -4808,161 +5654,303 @@ public class main extends javax.swing.JFrame {
     private void stocksMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_stocksMouseClicked
         CardLayout admin = (CardLayout) mainInventoryPanel.getLayout();
         admin.show(mainInventoryPanel, "inventoryPanelOne");
+        
+        ImageIcon icostocks = new ImageIcon(getClass().getResource("/buttons/stockshvr.png"));
+        stocks.setIcon(icostocks);
+                
+        ImageIcon icoproducts = new ImageIcon(getClass().getResource("/buttons/products.png"));
+        products.setIcon(icoproducts);
+        
+        ImageIcon icoarchery = new ImageIcon(getClass().getResource("/buttons/archery.png"));
+        archery.setIcon(icoarchery);
+        
+        ImageIcon icoadjustment = new ImageIcon(getClass().getResource("/buttons/adjust.png"));
+        adjustment.setIcon(icoadjustment);
+        
+        
+        CardLayout admin1 = (CardLayout) stocksPanel.getLayout();
+        admin1.show(stocksPanel, "stocksPanelOne");
+        
+        ImageIcon icoCurrent = new ImageIcon(getClass().getResource("/buttons/cshvr.png"));
+        currentStock.setIcon(icoCurrent);
+        
+        ImageIcon icCurrent = new ImageIcon(getClass().getResource("/buttons/ros.png"));
+        reOrderPoint.setIcon(icCurrent);
+        
+        ImageIcon iCurrent = new ImageIcon(getClass().getResource("/buttons/l.png"));
+        ledger.setIcon(iCurrent);
     }//GEN-LAST:event_stocksMouseClicked
 
     private void stocksMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_stocksMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/stockshvr.png"));
-        stocks.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/stockshvr.png"));
+        //stocks.setIcon(ico);
     }//GEN-LAST:event_stocksMouseEntered
 
     private void stocksMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_stocksMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/stocks.png"));
-        stocks.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/stocks.png"));
+        //stocks.setIcon(ico);
     }//GEN-LAST:event_stocksMouseExited
 
     private void productsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productsMouseClicked
         CardLayout admin = (CardLayout) mainInventoryPanel.getLayout();
         admin.show(mainInventoryPanel, "inventoryPanelTwo");
+        
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/productshvr.png"));
+        products.setIcon(ico);
+        
+        ImageIcon icostocks = new ImageIcon(getClass().getResource("/buttons/stocks.png"));
+        stocks.setIcon(icostocks);
+        
+        ImageIcon icoarchery = new ImageIcon(getClass().getResource("/buttons/archery.png"));
+        archery.setIcon(icoarchery);
+        
+        ImageIcon icoadjustment = new ImageIcon(getClass().getResource("/buttons/adjust.png"));
+        adjustment.setIcon(icoadjustment);
+        
+        
+        CardLayout adminProducts = (CardLayout) productsPanel.getLayout();
+        adminProducts.show(productsPanel, "productsPanelOne");
+        
+        ImageIcon iconewProduct = new ImageIcon(getClass().getResource("/buttons/nphvr.png"));
+        newProduct.setIcon(iconewProduct);
+        
+        ImageIcon icoproductCategory = new ImageIcon(getClass().getResource("/buttons/pc.png"));
+        productCategory.setIcon(icoproductCategory);
+        
+        ImageIcon icoproductList = new ImageIcon(getClass().getResource("/buttons/pl.png"));
+        productList.setIcon(icoproductList);
+        
+        ImageIcon icoorderHistory = new ImageIcon(getClass().getResource("/buttons/orderhist.png"));
+        orderHistory.setIcon(icoorderHistory);
     }//GEN-LAST:event_productsMouseClicked
 
     private void productsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productsMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/productshvr.png"));
-        products.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/productshvr.png"));
+        //products.setIcon(ico);
     }//GEN-LAST:event_productsMouseEntered
 
     private void productsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productsMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/products.png"));
-        products.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/products.png"));
+        //products.setIcon(ico);
     }//GEN-LAST:event_productsMouseExited
 
     private void archeryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_archeryMouseClicked
         CardLayout admin = (CardLayout) mainInventoryPanel.getLayout();
         admin.show(mainInventoryPanel, "inventoryPanelThree");
+        
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/archeryhvr.png"));
+        archery.setIcon(ico);
+        
+        ImageIcon icostocks = new ImageIcon(getClass().getResource("/buttons/stocks.png"));
+        stocks.setIcon(icostocks);
+        
+        ImageIcon icoproducts = new ImageIcon(getClass().getResource("/buttons/products.png"));
+        products.setIcon(icoproducts);
+        
+        ImageIcon icoadjustment = new ImageIcon(getClass().getResource("/buttons/adjust.png"));
+        adjustment.setIcon(icoadjustment); 
     }//GEN-LAST:event_archeryMouseClicked
 
     private void archeryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_archeryMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/archeryhvr.png"));
-        archery.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/archeryhvr.png"));
+        //archery.setIcon(ico);
     }//GEN-LAST:event_archeryMouseEntered
 
     private void archeryMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_archeryMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/archery.png"));
-        archery.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/archery.png"));
+        //archery.setIcon(ico);
     }//GEN-LAST:event_archeryMouseExited
 
     private void adjustmentMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adjustmentMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/adjusthvr.png"));
-        adjustment.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/adjusthvr.png"));
+        //adjustment.setIcon(ico);
     }//GEN-LAST:event_adjustmentMouseEntered
 
     private void adjustmentMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adjustmentMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/adjust.png"));
-        adjustment.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/adjust.png"));
+        //adjustment.setIcon(ico);
     }//GEN-LAST:event_adjustmentMouseExited
 
     private void currentStockMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_currentStockMouseClicked
         CardLayout admin = (CardLayout) stocksPanel.getLayout();
         admin.show(stocksPanel, "stocksPanelOne");
+        
+        ImageIcon icoCurrent = new ImageIcon(getClass().getResource("/buttons/cshvr.png"));
+        currentStock.setIcon(icoCurrent);
+        
+        ImageIcon icCurrent = new ImageIcon(getClass().getResource("/buttons/ros.png"));
+        reOrderPoint.setIcon(icCurrent);
+        
+        ImageIcon iCurrent = new ImageIcon(getClass().getResource("/buttons/l.png"));
+        ledger.setIcon(iCurrent);
+        
     }//GEN-LAST:event_currentStockMouseClicked
 
     private void currentStockMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_currentStockMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/cshvr.png"));
-        currentStock.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/cshvr.png"));
+        //currentStock.setIcon(ico);
     }//GEN-LAST:event_currentStockMouseEntered
 
     private void currentStockMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_currentStockMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/cs.png"));
-        currentStock.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/cs.png"));
+        //currentStock.setIcon(ico);
     }//GEN-LAST:event_currentStockMouseExited
 
     private void reOrderPointMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_reOrderPointMouseClicked
         CardLayout admin = (CardLayout) stocksPanel.getLayout();
         admin.show(stocksPanel, "stocksPanelTwo");
+        
+        ImageIcon icoreOrder = new ImageIcon(getClass().getResource("/buttons/roshvr.png"));
+        reOrderPoint.setIcon(icoreOrder);
+        
+        ImageIcon icreOrder = new ImageIcon(getClass().getResource("/buttons/cs.png"));
+        currentStock.setIcon(icreOrder);
+        
+        ImageIcon ireOrder = new ImageIcon(getClass().getResource("/buttons/l.png"));
+        ledger.setIcon(ireOrder);
     }//GEN-LAST:event_reOrderPointMouseClicked
 
     private void reOrderPointMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_reOrderPointMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/roshvr.png"));
-        reOrderPoint.setIcon(ico);
+       // ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/roshvr.png"));
+        //reOrderPoint.setIcon(ico);
     }//GEN-LAST:event_reOrderPointMouseEntered
 
     private void reOrderPointMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_reOrderPointMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/ros.png"));
-        reOrderPoint.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/ros.png"));
+        //reOrderPoint.setIcon(ico);
     }//GEN-LAST:event_reOrderPointMouseExited
 
     private void ledgerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ledgerMouseClicked
         CardLayout admin = (CardLayout) stocksPanel.getLayout();
         admin.show(stocksPanel, "stocksPanelFour");
+        
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/lhvr.png"));
+        ledger.setIcon(ico);
+        
+        ImageIcon icocurrentStock = new ImageIcon(getClass().getResource("/buttons/cs.png"));
+        currentStock.setIcon(icocurrentStock);
+        
+        ImageIcon icreOrderPoint = new ImageIcon(getClass().getResource("/buttons/ros.png"));
+        reOrderPoint.setIcon(icreOrderPoint);
     }//GEN-LAST:event_ledgerMouseClicked
 
     private void ledgerMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ledgerMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/lhvr.png"));
-        ledger.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/lhvr.png"));
+        //ledger.setIcon(ico);
     }//GEN-LAST:event_ledgerMouseEntered
 
     private void ledgerMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ledgerMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/l.png"));
-        ledger.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/l.png"));
+        //ledger.setIcon(ico);
     }//GEN-LAST:event_ledgerMouseExited
 
     private void newProductMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newProductMouseClicked
         CardLayout admin = (CardLayout) productsPanel.getLayout();
         admin.show(productsPanel, "productsPanelOne");
+        
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/nphvr.png"));
+        newProduct.setIcon(ico);
+        
+        ImageIcon icoproductCategory = new ImageIcon(getClass().getResource("/buttons/pc.png"));
+        productCategory.setIcon(icoproductCategory);
+        
+        ImageIcon icoproductList = new ImageIcon(getClass().getResource("/buttons/pl.png"));
+        productList.setIcon(icoproductList);
+        
+        ImageIcon icoorderHistory = new ImageIcon(getClass().getResource("/buttons/orderhist.png"));
+        orderHistory.setIcon(icoorderHistory);
+        
     }//GEN-LAST:event_newProductMouseClicked
 
     private void newProductMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newProductMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/nphvr.png"));
-        newProduct.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/nphvr.png"));
+        //newProduct.setIcon(ico);
     }//GEN-LAST:event_newProductMouseEntered
 
     private void newProductMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newProductMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/np.png"));
-        newProduct.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/np.png"));
+        //newProduct.setIcon(ico);
     }//GEN-LAST:event_newProductMouseExited
 
     private void productCategoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productCategoryMouseClicked
-        CardLayout admin = (CardLayout) productsPanel.getLayout();
-        admin.show(productsPanel, "productsPanelTwo");
+        CardLayout adminProductCategory = (CardLayout) productsPanel.getLayout();
+        adminProductCategory.show(productsPanel, "productsPanelTwo");
+        
+        ImageIcon iconewProduct = new ImageIcon(getClass().getResource("/buttons/np.png"));
+        newProduct.setIcon(iconewProduct);
+        
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/pchvr.png"));
+        productCategory.setIcon(ico);
+        
+        ImageIcon icoproductList = new ImageIcon(getClass().getResource("/buttons/pl.png"));
+        productList.setIcon(icoproductList);
+        
+        ImageIcon icoorderHistory = new ImageIcon(getClass().getResource("/buttons/orderhist.png"));
+        orderHistory.setIcon(icoorderHistory);
     }//GEN-LAST:event_productCategoryMouseClicked
 
     private void productCategoryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productCategoryMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/pchvr.png"));
-        productCategory.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/pchvr.png"));
+       //productCategory.setIcon(ico);
     }//GEN-LAST:event_productCategoryMouseEntered
 
     private void productCategoryMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productCategoryMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/pc.png"));
-        productCategory.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/pc.png"));
+        //productCategory.setIcon(ico);
     }//GEN-LAST:event_productCategoryMouseExited
 
     private void productListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productListMouseClicked
         CardLayout admin = (CardLayout) productsPanel.getLayout();
         admin.show(productsPanel, "productsPanelThree");
+        
+        ImageIcon iconewProduct = new ImageIcon(getClass().getResource("/buttons/np.png"));
+        newProduct.setIcon(iconewProduct);
+        
+        ImageIcon icoproductCategory = new ImageIcon(getClass().getResource("/buttons/pc.png"));
+        productCategory.setIcon(icoproductCategory);
+        
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/plhvr.png"));
+        productList.setIcon(ico);
+        
+        ImageIcon icoorderHistory = new ImageIcon(getClass().getResource("/buttons/orderhist.png"));
+        orderHistory.setIcon(icoorderHistory);
     }//GEN-LAST:event_productListMouseClicked
 
     private void productListMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productListMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/plhvr.png"));
-        productList.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/plhvr.png"));
+        //productList.setIcon(ico);
     }//GEN-LAST:event_productListMouseEntered
 
     private void productListMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productListMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/pl.png"));
-        productList.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/pl.png"));
+        //productList.setIcon(ico);
     }//GEN-LAST:event_productListMouseExited
 
     private void orderHistoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderHistoryMouseClicked
         CardLayout admin = (CardLayout) productsPanel.getLayout();
         admin.show(productsPanel, "productsPanelFour");
+        
+        ImageIcon iconewProduct = new ImageIcon(getClass().getResource("/buttons/np.png"));
+        newProduct.setIcon(iconewProduct);
+        
+        ImageIcon icoproductCategory = new ImageIcon(getClass().getResource("/buttons/pc.png"));
+        productCategory.setIcon(icoproductCategory);
+        
+        ImageIcon icoproductList = new ImageIcon(getClass().getResource("/buttons/pl.png"));
+        productList.setIcon(icoproductList);
+        
+        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/orderhisthvr.png"));
+        orderHistory.setIcon(ico);
     }//GEN-LAST:event_orderHistoryMouseClicked
 
     private void orderHistoryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderHistoryMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/orderhisthvr.png"));
-        orderHistory.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/orderhisthvr.png"));
+        //orderHistory.setIcon(ico);
     }//GEN-LAST:event_orderHistoryMouseEntered
 
     private void orderHistoryMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderHistoryMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/orderhist.png"));
-        orderHistory.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/orderhist.png"));
+        //orderHistory.setIcon(ico);
     }//GEN-LAST:event_orderHistoryMouseExited
 
     private void jTextField39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField39ActionPerformed
@@ -4972,6 +5960,29 @@ public class main extends javax.swing.JFrame {
     private void adjustmentMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adjustmentMouseClicked
         CardLayout admin = (CardLayout) mainInventoryPanel.getLayout();
         admin.show(mainInventoryPanel, "inventoryPanelFour");
+        
+        ImageIcon icoadjustment = new ImageIcon(getClass().getResource("/buttons/adjusthvr.png"));
+        adjustment.setIcon(icoadjustment);
+        
+        ImageIcon icostocks = new ImageIcon(getClass().getResource("/buttons/stocks.png"));
+        stocks.setIcon(icostocks);
+        
+        ImageIcon icoproducts = new ImageIcon(getClass().getResource("/buttons/products.png"));
+        products.setIcon(icoproducts);
+        
+        ImageIcon icoarchery = new ImageIcon(getClass().getResource("/buttons/archery.png"));
+        archery.setIcon(icoarchery);
+        
+        
+        
+        CardLayout adminAdjust = (CardLayout) adjustPanel.getLayout();
+        adminAdjust.show(adjustPanel, "adjustPanelOne");
+        
+        ImageIcon icoAdjustRaw = new ImageIcon(getClass().getResource("/buttons/rawhvr.png"));
+        adjustRaw.setIcon(icoAdjustRaw);
+        
+        ImageIcon icoAdjustFin = new ImageIcon(getClass().getResource("/buttons/fin.png"));
+        adjustFin.setIcon(icoAdjustFin);
     }//GEN-LAST:event_adjustmentMouseClicked
 
     private void jTextField18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField18ActionPerformed
@@ -4981,32 +5992,76 @@ public class main extends javax.swing.JFrame {
     private void adjustRawMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adjustRawMouseClicked
         CardLayout admin = (CardLayout) adjustPanel.getLayout();
         admin.show(adjustPanel, "adjustPanelOne");
+        
+        ImageIcon icoAdjustRaw = new ImageIcon(getClass().getResource("/buttons/rawhvr.png"));
+        adjustRaw.setIcon(icoAdjustRaw);
+        
+        ImageIcon icoAdjustFin = new ImageIcon(getClass().getResource("/buttons/fin.png"));
+        adjustFin.setIcon(icoAdjustFin);
     }//GEN-LAST:event_adjustRawMouseClicked
 
     private void adjustFinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adjustFinMouseClicked
         CardLayout admin = (CardLayout) adjustPanel.getLayout();
         admin.show(adjustPanel, "adjustPanelTwo");
+        
+        ImageIcon icoAdjustFin = new ImageIcon(getClass().getResource("/buttons/finhvr.png"));
+        adjustFin.setIcon(icoAdjustFin);
+        
+        ImageIcon icoAdjustRaw = new ImageIcon(getClass().getResource("/buttons/raw.png"));
+        adjustRaw.setIcon(icoAdjustRaw);
     }//GEN-LAST:event_adjustFinMouseClicked
 
     private void adjustRawMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adjustRawMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/rawhvr.png"));
-        adjustRaw.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/rawhvr.png"));
+        //adjustRaw.setIcon(ico);
     }//GEN-LAST:event_adjustRawMouseEntered
 
     private void adjustRawMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adjustRawMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/raw.png"));
-        adjustRaw.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/raw.png"));
+        //adjustRaw.setIcon(ico);
     }//GEN-LAST:event_adjustRawMouseExited
 
     private void adjustFinMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adjustFinMouseEntered
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/finhvr.png"));
-        adjustFin.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/finhvr.png"));
+        //adjustFin.setIcon(ico);
     }//GEN-LAST:event_adjustFinMouseEntered
 
     private void adjustFinMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adjustFinMouseExited
-        ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/fin.png"));
-        adjustFin.setIcon(ico);
+        //ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/fin.png"));
+        //adjustFin.setIcon(ico);
     }//GEN-LAST:event_adjustFinMouseExited
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void currentStockMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_currentStockMousePressed
+        
+    }//GEN-LAST:event_currentStockMousePressed
+
+    private void currentStockActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_currentStockActionPerformed
+        
+    }//GEN-LAST:event_currentStockActionPerformed
+
+    private void reOrderPointFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_reOrderPointFocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_reOrderPointFocusGained
+
+    private void currentStockFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_currentStockFocusGained
+        
+    }//GEN-LAST:event_currentStockFocusGained
+
+    private void jXDatePicker7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jXDatePicker7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jXDatePicker7ActionPerformed
+
+    private void jTextField49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField49ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField49ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -5084,7 +6139,6 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
@@ -5107,6 +6161,10 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JButton jButton30;
     private javax.swing.JButton jButton31;
     private javax.swing.JButton jButton32;
+    private javax.swing.JButton jButton33;
+    private javax.swing.JButton jButton34;
+    private javax.swing.JButton jButton35;
+    private javax.swing.JButton jButton36;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
@@ -5122,13 +6180,6 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox15;
     private javax.swing.JComboBox<String> jComboBox16;
     private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox4;
-    private javax.swing.JComboBox<String> jComboBox5;
-    private javax.swing.JComboBox<String> jComboBox6;
-    private javax.swing.JComboBox<String> jComboBox7;
-    private javax.swing.JComboBox<String> jComboBox8;
-    private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
@@ -5151,7 +6202,13 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel116;
     private javax.swing.JLabel jLabel117;
     private javax.swing.JLabel jLabel118;
+    private javax.swing.JLabel jLabel119;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel120;
+    private javax.swing.JLabel jLabel121;
+    private javax.swing.JLabel jLabel122;
+    private javax.swing.JLabel jLabel123;
+    private javax.swing.JLabel jLabel124;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
@@ -5182,6 +6239,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
@@ -5192,6 +6250,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel53;
@@ -5213,14 +6272,12 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel73;
     private javax.swing.JLabel jLabel74;
     private javax.swing.JLabel jLabel75;
     private javax.swing.JLabel jLabel76;
-    private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
@@ -5250,6 +6307,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JPasswordField jPasswordField2;
     private javax.swing.JScrollPane jScrollPane1;
@@ -5283,12 +6341,16 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane35;
     private javax.swing.JScrollPane jScrollPane36;
     private javax.swing.JScrollPane jScrollPane37;
+    private javax.swing.JScrollPane jScrollPane38;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
+    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
@@ -5325,6 +6387,8 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JTable jTable32;
     private javax.swing.JTable jTable33;
     private javax.swing.JTable jTable34;
+    private javax.swing.JTable jTable35;
+    private javax.swing.JTable jTable36;
     private javax.swing.JTable jTable4;
     private javax.swing.JTable jTable5;
     private javax.swing.JTable jTable6;
@@ -5334,6 +6398,8 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField15;
@@ -5368,9 +6434,19 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField41;
     private javax.swing.JTextField jTextField42;
     private javax.swing.JTextField jTextField43;
+    private javax.swing.JTextField jTextField44;
+    private javax.swing.JTextField jTextField45;
+    private javax.swing.JTextField jTextField46;
+    private javax.swing.JTextField jTextField47;
+    private javax.swing.JTextField jTextField48;
+    private javax.swing.JTextField jTextField49;
     private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField50;
+    private javax.swing.JTextField jTextField51;
+    private javax.swing.JTextField jTextField52;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     private javax.swing.JTextPane jTextPane1;
     private org.jdesktop.swingx.JXDatePicker jXDatePicker1;
@@ -5379,6 +6455,7 @@ public class main extends javax.swing.JFrame {
     private org.jdesktop.swingx.JXDatePicker jXDatePicker4;
     private org.jdesktop.swingx.JXDatePicker jXDatePicker5;
     private org.jdesktop.swingx.JXDatePicker jXDatePicker6;
+    private org.jdesktop.swingx.JXDatePicker jXDatePicker7;
     private javax.swing.JLabel label;
     private javax.swing.JButton ledger;
     private javax.swing.JPanel listAccountPanel;
@@ -5406,6 +6483,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel newAccountPanel;
     private javax.swing.JButton newEmployee;
     private javax.swing.JButton newProduct;
+    private javax.swing.JButton newPurchase;
     private javax.swing.JButton newSupplier;
     private javax.swing.JButton orderHistory;
     private javax.swing.JButton orders;
@@ -5437,7 +6515,6 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JButton returnsStock;
     private javax.swing.JButton sales;
     private javax.swing.JPanel salesReport;
-    private javax.swing.JButton selectSupplier;
     private javax.swing.JButton stocks;
     private javax.swing.JPanel stocksPanel;
     private javax.swing.JPanel stocksPanelFour;
