@@ -270,6 +270,15 @@ public class main extends javax.swing.JFrame {
         jTable26 = new javax.swing.JTable();
         jScrollPane30 = new javax.swing.JScrollPane();
         jTable27 = new javax.swing.JTable();
+        productsPanelFive = new javax.swing.JPanel();
+        jLabel70 = new javax.swing.JLabel();
+        jScrollPane39 = new javax.swing.JScrollPane();
+        jTable37 = new javax.swing.JTable();
+        jScrollPane40 = new javax.swing.JScrollPane();
+        jTable38 = new javax.swing.JTable();
+        jLabel77 = new javax.swing.JLabel();
+        jTextField53 = new javax.swing.JTextField();
+        transactionHistory = new javax.swing.JButton();
         inventoryPanelThree = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
         jScrollPane31 = new javax.swing.JScrollPane();
@@ -1891,6 +1900,7 @@ public class main extends javax.swing.JFrame {
         inventoryPanelTwo.add(orderHistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 5, -1, -1));
 
         productsPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        productsPanel.setOpaque(false);
         productsPanel.setLayout(new java.awt.CardLayout());
 
         productsPanelOne.setBackground(new java.awt.Color(255, 255, 255));
@@ -2153,34 +2163,30 @@ public class main extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane25, javax.swing.GroupLayout.PREFERRED_SIZE, 372, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(19, 19, 19)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel19)
-                                    .addComponent(jLabel87)
-                                    .addComponent(jLabel88)
-                                    .addComponent(jLabel89)
-                                    .addComponent(jLabel90)
-                                    .addComponent(jLabel91)
-                                    .addComponent(jLabel86))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField34)
-                                    .addComponent(jTextField35)
-                                    .addComponent(jTextField36)
-                                    .addComponent(jTextField37)
-                                    .addComponent(jTextField38)
-                                    .addComponent(jTextField39)
-                                    .addComponent(jTextField40, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel12)
-                                .addGap(36, 36, 36))))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel19)
+                            .addComponent(jLabel87)
+                            .addComponent(jLabel88)
+                            .addComponent(jLabel89)
+                            .addComponent(jLabel90)
+                            .addComponent(jLabel91)
+                            .addComponent(jLabel86))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField34)
+                            .addComponent(jTextField35)
+                            .addComponent(jTextField36)
+                            .addComponent(jTextField37)
+                            .addComponent(jTextField38)
+                            .addComponent(jTextField39)
+                            .addComponent(jTextField40, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(61, 61, 61)
-                        .addComponent(jButton18)))
+                        .addComponent(jLabel12)
+                        .addGap(36, 36, 36))
+                    .addComponent(jButton18))
                 .addContainerGap(59, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -2728,7 +2734,112 @@ public class main extends javax.swing.JFrame {
 
         productsPanel.add(productsPanelFour, "productsPanelFour");
 
+        productsPanelFive.setOpaque(false);
+        productsPanelFive.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel70.setFont(new java.awt.Font("Abadi MT Condensed", 1, 24)); // NOI18N
+        jLabel70.setText("Transactions");
+        productsPanelFive.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 15, -1, -1));
+
+        jTable37.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Transaction No", "Date"
+            }
+        ));
+        jScrollPane39.setViewportView(jTable37);
+
+        productsPanelFive.add(jScrollPane39, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 59, 201, 504));
+
+        jTable38.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Product Code", "Product Name", "Quantity Ordered", "Sub-Total"
+            }
+        ));
+        jScrollPane40.setViewportView(jTable38);
+
+        productsPanelFive.add(jScrollPane40, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 59, 665, 476));
+
+        jLabel77.setFont(new java.awt.Font("Abadi MT Condensed", 0, 18)); // NOI18N
+        jLabel77.setText("Total Sales:");
+        productsPanelFive.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 560, -1, -1));
+        productsPanelFive.add(jTextField53, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 560, 160, 30));
+
+        productsPanel.add(productsPanelFive, "productsPanelFive");
+
         inventoryPanelTwo.add(productsPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1024, 645));
+
+        transactionHistory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/th.png"))); // NOI18N
+        transactionHistory.setBorder(null);
+        transactionHistory.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                transactionHistoryMouseClicked(evt);
+            }
+        });
+        inventoryPanelTwo.add(transactionHistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(585, 5, -1, -1));
 
         mainInventoryPanel.add(inventoryPanelTwo, "inventoryPanelTwo");
 
@@ -5722,6 +5833,9 @@ public class main extends javax.swing.JFrame {
         
         ImageIcon icoorderHistory = new ImageIcon(getClass().getResource("/buttons/orderhist.png"));
         orderHistory.setIcon(icoorderHistory);
+        
+        ImageIcon icoTransactionHistory = new ImageIcon(getClass().getResource("/buttons/th.png"));
+        transactionHistory.setIcon(icoTransactionHistory);
     }//GEN-LAST:event_productsMouseClicked
 
     private void productsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productsMouseEntered
@@ -5860,6 +5974,9 @@ public class main extends javax.swing.JFrame {
         ImageIcon icoorderHistory = new ImageIcon(getClass().getResource("/buttons/orderhist.png"));
         orderHistory.setIcon(icoorderHistory);
         
+        ImageIcon icoTransactionHistory = new ImageIcon(getClass().getResource("/buttons/th.png"));
+        transactionHistory.setIcon(icoTransactionHistory);
+        
     }//GEN-LAST:event_newProductMouseClicked
 
     private void newProductMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newProductMouseEntered
@@ -5887,6 +6004,9 @@ public class main extends javax.swing.JFrame {
         
         ImageIcon icoorderHistory = new ImageIcon(getClass().getResource("/buttons/orderhist.png"));
         orderHistory.setIcon(icoorderHistory);
+        
+        ImageIcon icoTransactionHistory = new ImageIcon(getClass().getResource("/buttons/th.png"));
+        transactionHistory.setIcon(icoTransactionHistory);
     }//GEN-LAST:event_productCategoryMouseClicked
 
     private void productCategoryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productCategoryMouseEntered
@@ -5914,6 +6034,9 @@ public class main extends javax.swing.JFrame {
         
         ImageIcon icoorderHistory = new ImageIcon(getClass().getResource("/buttons/orderhist.png"));
         orderHistory.setIcon(icoorderHistory);
+        
+        ImageIcon icoTransactionHistory = new ImageIcon(getClass().getResource("/buttons/th.png"));
+        transactionHistory.setIcon(icoTransactionHistory);
     }//GEN-LAST:event_productListMouseClicked
 
     private void productListMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productListMouseEntered
@@ -5941,6 +6064,9 @@ public class main extends javax.swing.JFrame {
         
         ImageIcon ico = new ImageIcon(getClass().getResource("/buttons/orderhisthvr.png"));
         orderHistory.setIcon(ico);
+        
+        ImageIcon icoTransactionHistory = new ImageIcon(getClass().getResource("/buttons/th.png"));
+        transactionHistory.setIcon(icoTransactionHistory);
     }//GEN-LAST:event_orderHistoryMouseClicked
 
     private void orderHistoryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderHistoryMouseEntered
@@ -6062,6 +6188,26 @@ public class main extends javax.swing.JFrame {
     private void jTextField49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField49ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField49ActionPerformed
+
+    private void transactionHistoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_transactionHistoryMouseClicked
+        CardLayout admin = (CardLayout) productsPanel.getLayout();
+        admin.show(productsPanel, "productsPanelFive");
+        
+        ImageIcon iconewProduct = new ImageIcon(getClass().getResource("/buttons/np.png"));
+        newProduct.setIcon(iconewProduct);
+        
+        ImageIcon icoproductCategory = new ImageIcon(getClass().getResource("/buttons/pc.png"));
+        productCategory.setIcon(icoproductCategory);
+        
+        ImageIcon icoproductList = new ImageIcon(getClass().getResource("/buttons/pl.png"));
+        productList.setIcon(icoproductList);
+        
+        ImageIcon icoOrderHistory = new ImageIcon(getClass().getResource("/buttons/orderhist.png"));
+        orderHistory.setIcon(icoOrderHistory);
+        
+        ImageIcon icoTransactionHistory = new ImageIcon(getClass().getResource("/buttons/thhvr.png"));
+        transactionHistory.setIcon(icoTransactionHistory);
+    }//GEN-LAST:event_transactionHistoryMouseClicked
 
     /**
      * @param args the command line arguments
@@ -6272,12 +6418,14 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel73;
     private javax.swing.JLabel jLabel74;
     private javax.swing.JLabel jLabel75;
     private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
@@ -6342,7 +6490,9 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane36;
     private javax.swing.JScrollPane jScrollPane37;
     private javax.swing.JScrollPane jScrollPane38;
+    private javax.swing.JScrollPane jScrollPane39;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane40;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
@@ -6389,6 +6539,8 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JTable jTable34;
     private javax.swing.JTable jTable35;
     private javax.swing.JTable jTable36;
+    private javax.swing.JTable jTable37;
+    private javax.swing.JTable jTable38;
     private javax.swing.JTable jTable4;
     private javax.swing.JTable jTable5;
     private javax.swing.JTable jTable6;
@@ -6444,6 +6596,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField50;
     private javax.swing.JTextField jTextField51;
     private javax.swing.JTextField jTextField52;
+    private javax.swing.JTextField jTextField53;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
@@ -6494,6 +6647,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JButton productList;
     private javax.swing.JButton products;
     private javax.swing.JPanel productsPanel;
+    private javax.swing.JPanel productsPanelFive;
     private javax.swing.JPanel productsPanelFour;
     private javax.swing.JPanel productsPanelOne;
     private javax.swing.JPanel productsPanelThree;
@@ -6532,6 +6686,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel suppliersPanel;
     private javax.swing.JPanel suppliersPanelOne;
     private javax.swing.JPanel suppliersPanelTwo;
+    private javax.swing.JButton transactionHistory;
     private javax.swing.JButton unpaidOrder;
     private javax.swing.JButton unreceivedOrder;
     private javax.swing.JButton weeklyInventory;
